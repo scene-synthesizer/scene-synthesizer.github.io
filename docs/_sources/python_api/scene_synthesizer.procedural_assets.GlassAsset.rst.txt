@@ -1,0 +1,9 @@
+scene_synthesizer.procedural_assets.GlassAsset
+----------------------------------------------
+
+.. currentmodule:: scene_synthesizer.procedural_assets
+
+.. autoclass:: GlassAsset
+    :members:
+    :undoc-members:
+    :inherited-members:

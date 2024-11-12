@@ -1,0 +1,9 @@
+scene_synthesizer.procedural_assets.OpenBoxAsset
+------------------------------------------------
+
+.. currentmodule:: scene_synthesizer.procedural_assets
+
+.. autoclass:: OpenBoxAsset
+    :members:
+    :undoc-members:
+    :inherited-members:

@@ -1,0 +1,6 @@
+scene_synthesizer.utils.sample_polygon
+--------------------------------------
+
+.. currentmodule:: scene_synthesizer.utils
+
+.. autofunction:: sample_polygon

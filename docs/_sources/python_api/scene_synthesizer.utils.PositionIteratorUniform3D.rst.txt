@@ -1,0 +1,9 @@
+scene_synthesizer.utils.PositionIteratorUniform3D
+-------------------------------------------------
+
+.. currentmodule:: scene_synthesizer.utils
+
+.. autoclass:: PositionIteratorUniform3D
+    :members:
+    :undoc-members:
+    :inherited-members:

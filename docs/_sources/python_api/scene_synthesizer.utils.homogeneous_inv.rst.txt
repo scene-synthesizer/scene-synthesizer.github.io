@@ -1,0 +1,6 @@
+scene_synthesizer.utils.homogeneous_inv
+---------------------------------------
+
+.. currentmodule:: scene_synthesizer.utils
+
+.. autofunction:: homogeneous_inv

@@ -1,0 +1,9 @@
+scene_synthesizer.procedural_assets.BaseCabinetAsset
+----------------------------------------------------
+
+.. currentmodule:: scene_synthesizer.procedural_assets
+
+.. autoclass:: BaseCabinetAsset
+    :members:
+    :undoc-members:
+    :inherited-members:

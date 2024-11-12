@@ -1,0 +1,6 @@
+scene_synthesizer.utils.sample_random_direction_R3
+--------------------------------------------------
+
+.. currentmodule:: scene_synthesizer.utils
+
+.. autofunction:: sample_random_direction_R3

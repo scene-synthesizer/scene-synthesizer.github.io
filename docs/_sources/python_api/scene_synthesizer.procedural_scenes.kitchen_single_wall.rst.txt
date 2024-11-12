@@ -1,0 +1,6 @@
+scene_synthesizer.procedural_scenes.kitchen_single_wall
+-------------------------------------------------------
+
+.. currentmodule:: scene_synthesizer.procedural_scenes
+
+.. autofunction:: kitchen_single_wall

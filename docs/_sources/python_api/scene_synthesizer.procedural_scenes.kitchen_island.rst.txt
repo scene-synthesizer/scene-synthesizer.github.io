@@ -1,0 +1,6 @@
+scene_synthesizer.procedural_scenes.kitchen_island
+--------------------------------------------------
+
+.. currentmodule:: scene_synthesizer.procedural_scenes
+
+.. autofunction:: kitchen_island

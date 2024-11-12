@@ -1,0 +1,6 @@
+scene_synthesizer.utils.random_color
+------------------------------------
+
+.. currentmodule:: scene_synthesizer.utils
+
+.. autofunction:: random_color

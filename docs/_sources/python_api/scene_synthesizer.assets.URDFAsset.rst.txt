@@ -1,0 +1,9 @@
+scene_synthesizer.assets.URDFAsset
+----------------------------------
+
+.. currentmodule:: scene_synthesizer.assets
+
+.. autoclass:: URDFAsset
+    :members:
+    :undoc-members:
+    :inherited-members:

@@ -1,0 +1,9 @@
+scene_synthesizer.procedural_assets.TableAsset
+----------------------------------------------
+
+.. currentmodule:: scene_synthesizer.procedural_assets
+
+.. autoclass:: TableAsset
+    :members:
+    :undoc-members:
+    :inherited-members:

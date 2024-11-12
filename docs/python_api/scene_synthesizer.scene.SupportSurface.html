@@ -1,0 +1,217 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>scene_synthesizer.scene.SupportSurface &mdash; Scene Synthesizer  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=eafc0fe6" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=3835c3f0" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=b3ba4146"></script>
+      <script src="../_static/doctools.js?v=888ff710"></script>
+      <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="scene_synthesizer.scene.asset_generator" href="scene_synthesizer.scene.asset_generator.html" />
+    <link rel="prev" title="scene_synthesizer.scene.Scene" href="scene_synthesizer.scene.Scene.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Scene Synthesizer
+              <img src="../_static/kitchen_sketch_small.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/faq.html">FAQ</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Concepts</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../concepts/assets.html">Assets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../concepts/scenes.html">Scenes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../concepts/procedural_assets.html">Procedural Assets &amp; Procedural Scenes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../concepts/arranging_objects.html">Object Arrangement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../concepts/articulations.html">Articulations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../concepts/exporting.html">Exporting</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="scene_synthesizer.scene.html">scene_synthesizer.scene</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="scene_synthesizer.scene.Container.html">Container</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scene_synthesizer.scene.Scene.html">Scene</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">SupportSurface</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#scene_synthesizer.scene.SupportSurface"><code class="docutils literal notranslate"><span class="pre">SupportSurface</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#scene_synthesizer.scene.SupportSurface.polygon"><code class="docutils literal notranslate"><span class="pre">SupportSurface.polygon</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#scene_synthesizer.scene.SupportSurface.facet_index"><code class="docutils literal notranslate"><span class="pre">SupportSurface.facet_index</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#scene_synthesizer.scene.SupportSurface.node_name"><code class="docutils literal notranslate"><span class="pre">SupportSurface.node_name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#scene_synthesizer.scene.SupportSurface.transform"><code class="docutils literal notranslate"><span class="pre">SupportSurface.transform</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#scene_synthesizer.scene.SupportSurface.coverage"><code class="docutils literal notranslate"><span class="pre">SupportSurface.coverage</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#scene_synthesizer.scene.SupportSurface.covered"><code class="docutils literal notranslate"><span class="pre">SupportSurface.covered</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="scene_synthesizer.scene.asset_generator.html">asset_generator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scene_synthesizer.scene.dataclass.html">dataclass</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scene_synthesizer.scene.pyglet_app_run.html">pyglet_app_run</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="scene_synthesizer.assets.html">scene_synthesizer.assets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scene_synthesizer.procedural_assets.html">scene_synthesizer.procedural_assets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scene_synthesizer.procedural_scenes.html">scene_synthesizer.procedural_scenes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scene_synthesizer.utils.html">scene_synthesizer.utils</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scene_synthesizer.exchange.export.html">scene_synthesizer.exchange.export</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../examples/add_mdl_materials.html">Adding MDL Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/isaacsim.html">Using Scenes in Isaac Sim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/isaaclab_rl.html">Using Scenes in Isaac Lab for RL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/isaaclab_teleop.html">Using Scenes in Isaac Lab for Teleop</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Scene Synthesizer</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="scene_synthesizer.scene.html">scene_synthesizer.scene</a></li>
+      <li class="breadcrumb-item active">scene_synthesizer.scene.SupportSurface</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/python_api/scene_synthesizer.scene.SupportSurface.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="scene-synthesizer-scene-supportsurface">
+<h1>scene_synthesizer.scene.SupportSurface<a class="headerlink" href="#scene-synthesizer-scene-supportsurface" title="Permalink to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="scene_synthesizer.scene.SupportSurface">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">scene_synthesizer.scene.</span></span><span class="sig-name descname"><span class="pre">SupportSurface</span></span><a class="headerlink" href="#scene_synthesizer.scene.SupportSurface" title="Permalink to this definition"></a></dt>
+<dd><p>A class for holding information about a support surface in the scene.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>polygon</strong> (<em>Polygon</em>) – </p></li>
+<li><p><strong>facet_index</strong> (<em>int</em>) – </p></li>
+<li><p><strong>node_name</strong> (<em>str</em>) – </p></li>
+<li><p><strong>transform</strong> (<em>ndarray</em>) – </p></li>
+<li><p><strong>coverage</strong> (<em>float</em><em> | </em><em>None</em>) – </p></li>
+<li><p><strong>covered</strong> (<em>bool</em><em> | </em><em>None</em>) – </p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="scene_synthesizer.scene.SupportSurface.polygon">
+<span class="sig-name descname"><span class="pre">polygon</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Polygon</span></em><a class="headerlink" href="#scene_synthesizer.scene.SupportSurface.polygon" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="scene_synthesizer.scene.SupportSurface.facet_index">
+<span class="sig-name descname"><span class="pre">facet_index</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#scene_synthesizer.scene.SupportSurface.facet_index" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="scene_synthesizer.scene.SupportSurface.node_name">
+<span class="sig-name descname"><span class="pre">node_name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#scene_synthesizer.scene.SupportSurface.node_name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="scene_synthesizer.scene.SupportSurface.transform">
+<span class="sig-name descname"><span class="pre">transform</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ndarray</span></em><a class="headerlink" href="#scene_synthesizer.scene.SupportSurface.transform" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="scene_synthesizer.scene.SupportSurface.coverage">
+<span class="sig-name descname"><span class="pre">coverage</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#scene_synthesizer.scene.SupportSurface.coverage" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="scene_synthesizer.scene.SupportSurface.covered">
+<span class="sig-name descname"><span class="pre">covered</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#scene_synthesizer.scene.SupportSurface.covered" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="scene_synthesizer.scene.Scene.html" class="btn btn-neutral float-left" title="scene_synthesizer.scene.Scene" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="scene_synthesizer.scene.asset_generator.html" class="btn btn-neutral float-right" title="scene_synthesizer.scene.asset_generator" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, NVIDIA.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+ <script type="text/javascript">
+    $(document).ready(function() {
+        $(".toggle > *").hide();
+        $(".toggle .header").show();
+        $(".toggle .header").click(function() {
+            $(this).parent().children().not(".header").toggle(250);
+            $(this).parent().children(".header").toggleClass("open");
+        })
+    });
+</script>
+
+
+</body>
+</html>

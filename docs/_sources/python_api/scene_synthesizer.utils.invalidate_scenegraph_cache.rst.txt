@@ -1,0 +1,6 @@
+scene_synthesizer.utils.invalidate_scenegraph_cache
+---------------------------------------------------
+
+.. currentmodule:: scene_synthesizer.utils
+
+.. autofunction:: invalidate_scenegraph_cache

@@ -1,0 +1,9 @@
+scene_synthesizer.scene.SupportSurface
+--------------------------------------
+
+.. currentmodule:: scene_synthesizer.scene
+
+.. autoclass:: SupportSurface
+    :members:
+    :undoc-members:
+    :inherited-members:

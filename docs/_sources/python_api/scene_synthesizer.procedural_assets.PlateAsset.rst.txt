@@ -1,0 +1,9 @@
+scene_synthesizer.procedural_assets.PlateAsset
+----------------------------------------------
+
+.. currentmodule:: scene_synthesizer.procedural_assets
+
+.. autoclass:: PlateAsset
+    :members:
+    :undoc-members:
+    :inherited-members:

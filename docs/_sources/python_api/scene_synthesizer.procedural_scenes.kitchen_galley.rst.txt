@@ -1,0 +1,6 @@
+scene_synthesizer.procedural_scenes.kitchen_galley
+--------------------------------------------------
+
+.. currentmodule:: scene_synthesizer.procedural_scenes
+
+.. autofunction:: kitchen_galley

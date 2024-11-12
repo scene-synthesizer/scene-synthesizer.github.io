@@ -1,0 +1,9 @@
+scene_synthesizer.procedural_assets.DishwasherAsset
+---------------------------------------------------
+
+.. currentmodule:: scene_synthesizer.procedural_assets
+
+.. autoclass:: DishwasherAsset
+    :members:
+    :undoc-members:
+    :inherited-members:

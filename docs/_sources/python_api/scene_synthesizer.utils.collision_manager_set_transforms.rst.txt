@@ -1,0 +1,6 @@
+scene_synthesizer.utils.collision_manager_set_transforms
+--------------------------------------------------------
+
+.. currentmodule:: scene_synthesizer.utils
+
+.. autofunction:: collision_manager_set_transforms

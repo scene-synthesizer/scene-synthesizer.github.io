@@ -1,0 +1,9 @@
+scene_synthesizer.procedural_assets.LeverSwitchAsset
+----------------------------------------------------
+
+.. currentmodule:: scene_synthesizer.procedural_assets
+
+.. autoclass:: LeverSwitchAsset
+    :members:
+    :undoc-members:
+    :inherited-members:

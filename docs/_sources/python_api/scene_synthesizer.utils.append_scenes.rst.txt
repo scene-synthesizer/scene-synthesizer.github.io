@@ -1,0 +1,6 @@
+scene_synthesizer.utils.append_scenes
+-------------------------------------
+
+.. currentmodule:: scene_synthesizer.utils
+
+.. autofunction:: append_scenes

@@ -1,0 +1,6 @@
+scene_synthesizer.scene.dataclass
+---------------------------------
+
+.. currentmodule:: scene_synthesizer.scene
+
+.. autofunction:: dataclass

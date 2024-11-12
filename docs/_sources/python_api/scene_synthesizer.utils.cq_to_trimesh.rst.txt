@@ -1,0 +1,6 @@
+scene_synthesizer.utils.cq_to_trimesh
+-------------------------------------
+
+.. currentmodule:: scene_synthesizer.utils
+
+.. autofunction:: cq_to_trimesh
