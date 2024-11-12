@@ -1,0 +1,9 @@
+scene_synthesizer.assets.BoxAsset
+---------------------------------
+
+.. currentmodule:: scene_synthesizer.assets
+
+.. autoclass:: BoxAsset
+    :members:
+    :undoc-members:
+    :inherited-members:

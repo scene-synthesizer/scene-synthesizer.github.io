@@ -1,0 +1,6 @@
+scene_synthesizer.utils.get_mass_properties
+-------------------------------------------
+
+.. currentmodule:: scene_synthesizer.utils
+
+.. autofunction:: get_mass_properties

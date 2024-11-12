@@ -1,0 +1,6 @@
+scene_synthesizer.utils.create_torus
+------------------------------------
+
+.. currentmodule:: scene_synthesizer.utils
+
+.. autofunction:: create_torus

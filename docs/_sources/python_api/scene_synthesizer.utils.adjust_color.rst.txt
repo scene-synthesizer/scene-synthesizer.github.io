@@ -1,0 +1,6 @@
+scene_synthesizer.utils.adjust_color
+------------------------------------
+
+.. currentmodule:: scene_synthesizer.utils
+
+.. autofunction:: adjust_color

@@ -1,0 +1,9 @@
+scene_synthesizer.assets.CapsuleAsset
+-------------------------------------
+
+.. currentmodule:: scene_synthesizer.assets
+
+.. autoclass:: CapsuleAsset
+    :members:
+    :undoc-members:
+    :inherited-members:

@@ -1,0 +1,9 @@
+scene_synthesizer.procedural_assets.KitchenIslandAsset
+------------------------------------------------------
+
+.. currentmodule:: scene_synthesizer.procedural_assets
+
+.. autoclass:: KitchenIslandAsset
+    :members:
+    :undoc-members:
+    :inherited-members:

@@ -1,0 +1,9 @@
+scene_synthesizer.assets.MeshAsset
+----------------------------------
+
+.. currentmodule:: scene_synthesizer.assets
+
+.. autoclass:: MeshAsset
+    :members:
+    :undoc-members:
+    :inherited-members:

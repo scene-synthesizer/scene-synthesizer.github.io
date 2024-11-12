@@ -1,0 +1,6 @@
+scene_synthesizer.exchange.export.export_gltf
+---------------------------------------------
+
+.. currentmodule:: scene_synthesizer.exchange.export
+
+.. autofunction:: export_gltf

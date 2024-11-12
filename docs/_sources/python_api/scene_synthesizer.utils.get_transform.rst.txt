@@ -1,0 +1,6 @@
+scene_synthesizer.utils.get_transform
+-------------------------------------
+
+.. currentmodule:: scene_synthesizer.utils
+
+.. autofunction:: get_transform

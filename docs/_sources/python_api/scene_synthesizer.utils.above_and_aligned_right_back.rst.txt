@@ -1,0 +1,6 @@
+scene_synthesizer.utils.above_and_aligned_right_back
+----------------------------------------------------
+
+.. currentmodule:: scene_synthesizer.utils
+
+.. autofunction:: above_and_aligned_right_back

@@ -1,0 +1,6 @@
+scene_synthesizer.utils.select_sublist
+--------------------------------------
+
+.. currentmodule:: scene_synthesizer.utils
+
+.. autofunction:: select_sublist

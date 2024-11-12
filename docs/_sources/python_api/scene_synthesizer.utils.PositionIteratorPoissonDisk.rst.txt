@@ -1,0 +1,9 @@
+scene_synthesizer.utils.PositionIteratorPoissonDisk
+---------------------------------------------------
+
+.. currentmodule:: scene_synthesizer.utils
+
+.. autoclass:: PositionIteratorPoissonDisk
+    :members:
+    :undoc-members:
+    :inherited-members:

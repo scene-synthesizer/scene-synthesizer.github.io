@@ -1,0 +1,9 @@
+scene_synthesizer.procedural_assets.MicrowaveAsset
+--------------------------------------------------
+
+.. currentmodule:: scene_synthesizer.procedural_assets
+
+.. autoclass:: MicrowaveAsset
+    :members:
+    :undoc-members:
+    :inherited-members:

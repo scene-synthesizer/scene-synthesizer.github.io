@@ -1,0 +1,9 @@
+scene_synthesizer.scene.Scene
+-----------------------------
+
+.. currentmodule:: scene_synthesizer.scene
+
+.. autoclass:: Scene
+    :members:
+    :undoc-members:
+    :inherited-members:

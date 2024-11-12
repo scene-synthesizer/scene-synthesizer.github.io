@@ -1,0 +1,9 @@
+scene_synthesizer.procedural_assets.BowlAsset
+---------------------------------------------
+
+.. currentmodule:: scene_synthesizer.procedural_assets
+
+.. autoclass:: BowlAsset
+    :members:
+    :undoc-members:
+    :inherited-members:

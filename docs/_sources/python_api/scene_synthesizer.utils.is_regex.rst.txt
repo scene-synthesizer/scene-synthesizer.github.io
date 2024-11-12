@@ -1,0 +1,6 @@
+scene_synthesizer.utils.is_regex
+--------------------------------
+
+.. currentmodule:: scene_synthesizer.utils
+
+.. autofunction:: is_regex

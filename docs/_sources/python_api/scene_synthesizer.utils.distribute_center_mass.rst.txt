@@ -1,0 +1,6 @@
+scene_synthesizer.utils.distribute_center_mass
+----------------------------------------------
+
+.. currentmodule:: scene_synthesizer.utils
+
+.. autofunction:: distribute_center_mass

@@ -1,0 +1,9 @@
+scene_synthesizer.procedural_assets.CubbyShelfAsset
+---------------------------------------------------
+
+.. currentmodule:: scene_synthesizer.procedural_assets
+
+.. autoclass:: CubbyShelfAsset
+    :members:
+    :undoc-members:
+    :inherited-members:

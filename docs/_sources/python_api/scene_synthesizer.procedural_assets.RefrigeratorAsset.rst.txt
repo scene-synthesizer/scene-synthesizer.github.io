@@ -1,0 +1,9 @@
+scene_synthesizer.procedural_assets.RefrigeratorAsset
+-----------------------------------------------------
+
+.. currentmodule:: scene_synthesizer.procedural_assets
+
+.. autoclass:: RefrigeratorAsset
+    :members:
+    :undoc-members:
+    :inherited-members:

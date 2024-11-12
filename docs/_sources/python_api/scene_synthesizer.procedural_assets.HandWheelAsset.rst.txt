@@ -1,0 +1,9 @@
+scene_synthesizer.procedural_assets.HandWheelAsset
+--------------------------------------------------
+
+.. currentmodule:: scene_synthesizer.procedural_assets
+
+.. autoclass:: HandWheelAsset
+    :members:
+    :undoc-members:
+    :inherited-members:

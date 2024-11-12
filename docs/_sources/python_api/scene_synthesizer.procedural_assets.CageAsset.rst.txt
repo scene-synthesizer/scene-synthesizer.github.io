@@ -1,0 +1,9 @@
+scene_synthesizer.procedural_assets.CageAsset
+---------------------------------------------
+
+.. currentmodule:: scene_synthesizer.procedural_assets
+
+.. autoclass:: CageAsset
+    :members:
+    :undoc-members:
+    :inherited-members:

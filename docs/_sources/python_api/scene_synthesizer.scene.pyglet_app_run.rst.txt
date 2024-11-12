@@ -1,0 +1,6 @@
+scene_synthesizer.scene.pyglet_app_run
+--------------------------------------
+
+.. currentmodule:: scene_synthesizer.scene
+
+.. autofunction:: pyglet_app_run
