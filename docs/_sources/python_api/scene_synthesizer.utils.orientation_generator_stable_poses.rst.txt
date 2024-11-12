@@ -1,6 +1,0 @@
-scene_synthesizer.utils.orientation_generator_stable_poses
-----------------------------------------------------------
-
-.. currentmodule:: scene_synthesizer.utils
-
-.. autofunction:: orientation_generator_stable_poses

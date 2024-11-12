@@ -1,6 +1,0 @@
-scene_synthesizer.procedural_scenes.kitchen
--------------------------------------------
-
-.. currentmodule:: scene_synthesizer.procedural_scenes
-
-.. autofunction:: kitchen

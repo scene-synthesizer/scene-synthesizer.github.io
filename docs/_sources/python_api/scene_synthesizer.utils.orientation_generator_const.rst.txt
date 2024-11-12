@@ -1,6 +1,0 @@
-scene_synthesizer.utils.orientation_generator_const
----------------------------------------------------
-
-.. currentmodule:: scene_synthesizer.utils
-
-.. autofunction:: orientation_generator_const

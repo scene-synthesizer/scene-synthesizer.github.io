@@ -1,6 +1,0 @@
-scene_synthesizer.utils.sample_volume_mesh
-------------------------------------------
-
-.. currentmodule:: scene_synthesizer.utils
-
-.. autofunction:: sample_volume_mesh

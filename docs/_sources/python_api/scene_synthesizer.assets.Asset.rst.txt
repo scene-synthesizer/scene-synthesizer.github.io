@@ -1,9 +1,0 @@
-scene_synthesizer.assets.Asset
-------------------------------
-
-.. currentmodule:: scene_synthesizer.assets
-
-.. autoclass:: Asset
-    :members:
-    :undoc-members:
-    :inherited-members:

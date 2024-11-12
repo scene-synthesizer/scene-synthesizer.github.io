@@ -1,9 +1,0 @@
-scene_synthesizer.utils.PositionIterator3D
-------------------------------------------
-
-.. currentmodule:: scene_synthesizer.utils
-
-.. autoclass:: PositionIterator3D
-    :members:
-    :undoc-members:
-    :inherited-members:

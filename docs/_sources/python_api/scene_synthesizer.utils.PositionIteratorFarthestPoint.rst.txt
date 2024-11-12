@@ -1,9 +1,0 @@
-scene_synthesizer.utils.PositionIteratorFarthestPoint
------------------------------------------------------
-
-.. currentmodule:: scene_synthesizer.utils
-
-.. autoclass:: PositionIteratorFarthestPoint
-    :members:
-    :undoc-members:
-    :inherited-members:

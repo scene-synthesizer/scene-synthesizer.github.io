@@ -1,6 +1,0 @@
-scene_synthesizer.utils.get_watertight_trimesh_geometry
--------------------------------------------------------
-
-.. currentmodule:: scene_synthesizer.utils
-
-.. autofunction:: get_watertight_trimesh_geometry

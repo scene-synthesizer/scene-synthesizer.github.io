@@ -1,6 +1,0 @@
-scene_synthesizer.utils.snake_case
-----------------------------------
-
-.. currentmodule:: scene_synthesizer.utils
-
-.. autofunction:: snake_case

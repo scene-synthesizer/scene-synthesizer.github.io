@@ -1,9 +1,0 @@
-scene_synthesizer.assets.OpenSCADAsset
---------------------------------------
-
-.. currentmodule:: scene_synthesizer.assets
-
-.. autoclass:: OpenSCADAsset
-    :members:
-    :undoc-members:
-    :inherited-members:

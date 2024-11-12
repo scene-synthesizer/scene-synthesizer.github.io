@@ -1,6 +1,0 @@
-scene_synthesizer.procedural_scenes.kitchen_l_shaped
-----------------------------------------------------
-
-.. currentmodule:: scene_synthesizer.procedural_scenes
-
-.. autofunction:: kitchen_l_shaped

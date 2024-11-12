@@ -1,6 +1,0 @@
-scene_synthesizer.utils.add_node_to_scene
------------------------------------------
-
-.. currentmodule:: scene_synthesizer.utils
-
-.. autofunction:: add_node_to_scene

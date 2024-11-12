@@ -1,9 +1,0 @@
-scene_synthesizer.procedural_assets.KnobAsset
----------------------------------------------
-
-.. currentmodule:: scene_synthesizer.procedural_assets
-
-.. autoclass:: KnobAsset
-    :members:
-    :undoc-members:
-    :inherited-members:

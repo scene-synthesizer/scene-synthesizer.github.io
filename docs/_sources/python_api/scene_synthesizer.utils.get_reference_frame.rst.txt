@@ -1,6 +1,0 @@
-scene_synthesizer.utils.get_reference_frame
--------------------------------------------
-
-.. currentmodule:: scene_synthesizer.utils
-
-.. autofunction:: get_reference_frame
