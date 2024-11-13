@@ -1,6 +1,0 @@
-scene_synthesizer.procedural_scenes.use_primitives_only
--------------------------------------------------------
-
-.. currentmodule:: scene_synthesizer.procedural_scenes
-
-.. autofunction:: use_primitives_only

@@ -1,6 +1,0 @@
-scene_synthesizer.utils.scaled_trimesh_scene
---------------------------------------------
-
-.. currentmodule:: scene_synthesizer.utils
-
-.. autofunction:: scaled_trimesh_scene

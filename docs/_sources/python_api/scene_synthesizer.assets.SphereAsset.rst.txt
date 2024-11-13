@@ -1,9 +1,0 @@
-scene_synthesizer.assets.SphereAsset
-------------------------------------
-
-.. currentmodule:: scene_synthesizer.assets
-
-.. autoclass:: SphereAsset
-    :members:
-    :undoc-members:
-    :inherited-members:

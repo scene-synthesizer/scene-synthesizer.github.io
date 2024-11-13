@@ -1,6 +1,0 @@
-scene_synthesizer.utils.late_bind_exception
--------------------------------------------
-
-.. currentmodule:: scene_synthesizer.utils
-
-.. autofunction:: late_bind_exception

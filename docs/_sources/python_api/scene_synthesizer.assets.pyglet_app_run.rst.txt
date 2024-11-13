@@ -1,6 +1,0 @@
-scene_synthesizer.assets.pyglet_app_run
----------------------------------------
-
-.. currentmodule:: scene_synthesizer.assets
-
-.. autofunction:: pyglet_app_run

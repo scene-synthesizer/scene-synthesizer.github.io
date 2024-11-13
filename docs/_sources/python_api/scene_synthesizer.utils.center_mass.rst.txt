@@ -1,6 +1,0 @@
-scene_synthesizer.utils.center_mass
------------------------------------
-
-.. currentmodule:: scene_synthesizer.utils
-
-.. autofunction:: center_mass

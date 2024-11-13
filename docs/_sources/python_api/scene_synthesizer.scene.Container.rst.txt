@@ -1,9 +1,0 @@
-scene_synthesizer.scene.Container
----------------------------------
-
-.. currentmodule:: scene_synthesizer.scene
-
-.. autoclass:: Container
-    :members:
-    :undoc-members:
-    :inherited-members:

@@ -1,6 +1,0 @@
-scene_synthesizer.utils.create_yourdfpy_scene
----------------------------------------------
-
-.. currentmodule:: scene_synthesizer.utils
-
-.. autofunction:: create_yourdfpy_scene

@@ -1,9 +1,0 @@
-scene_synthesizer.procedural_assets.SafetySwitchAsset
------------------------------------------------------
-
-.. currentmodule:: scene_synthesizer.procedural_assets
-
-.. autoclass:: SafetySwitchAsset
-    :members:
-    :undoc-members:
-    :inherited-members:

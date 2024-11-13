@@ -1,9 +1,0 @@
-scene_synthesizer.assets.MJCFAsset
-----------------------------------
-
-.. currentmodule:: scene_synthesizer.assets
-
-.. autoclass:: MJCFAsset
-    :members:
-    :undoc-members:
-    :inherited-members:

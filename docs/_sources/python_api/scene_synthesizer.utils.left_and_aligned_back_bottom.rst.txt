@@ -1,6 +1,0 @@
-scene_synthesizer.utils.left_and_aligned_back_bottom
-----------------------------------------------------
-
-.. currentmodule:: scene_synthesizer.utils
-
-.. autofunction:: left_and_aligned_back_bottom

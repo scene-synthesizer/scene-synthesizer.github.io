@@ -1,9 +1,0 @@
-scene_synthesizer.assets.CQAsset
---------------------------------
-
-.. currentmodule:: scene_synthesizer.assets
-
-.. autoclass:: CQAsset
-    :members:
-    :undoc-members:
-    :inherited-members:

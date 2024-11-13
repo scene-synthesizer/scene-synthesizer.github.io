@@ -1,9 +1,0 @@
-scene_synthesizer.procedural_assets.RecursivelyPartitionedCabinetAsset
-----------------------------------------------------------------------
-
-.. currentmodule:: scene_synthesizer.procedural_assets
-
-.. autoclass:: RecursivelyPartitionedCabinetAsset
-    :members:
-    :undoc-members:
-    :inherited-members:

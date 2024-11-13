@@ -1,9 +1,0 @@
-scene_synthesizer.assets.USDAsset
----------------------------------
-
-.. currentmodule:: scene_synthesizer.assets
-
-.. autoclass:: USDAsset
-    :members:
-    :undoc-members:
-    :inherited-members:

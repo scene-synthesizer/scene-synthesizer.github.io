@@ -1,6 +1,0 @@
-scene_synthesizer.exchange.export.export_glb
---------------------------------------------
-
-.. currentmodule:: scene_synthesizer.exchange.export
-
-.. autofunction:: export_glb

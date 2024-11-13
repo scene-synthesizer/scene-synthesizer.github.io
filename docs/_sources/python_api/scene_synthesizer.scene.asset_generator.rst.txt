@@ -1,6 +1,0 @@
-scene_synthesizer.scene.asset_generator
----------------------------------------
-
-.. currentmodule:: scene_synthesizer.scene
-
-.. autofunction:: asset_generator

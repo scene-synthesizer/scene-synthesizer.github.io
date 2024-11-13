@@ -1,9 +1,0 @@
-scene_synthesizer.procedural_assets.SinkCabinetAsset
-----------------------------------------------------
-
-.. currentmodule:: scene_synthesizer.procedural_assets
-
-.. autoclass:: SinkCabinetAsset
-    :members:
-    :undoc-members:
-    :inherited-members:

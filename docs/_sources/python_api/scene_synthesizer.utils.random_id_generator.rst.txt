@@ -1,6 +1,0 @@
-scene_synthesizer.utils.random_id_generator
--------------------------------------------
-
-.. currentmodule:: scene_synthesizer.utils
-
-.. autofunction:: random_id_generator

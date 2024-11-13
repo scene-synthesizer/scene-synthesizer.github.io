@@ -1,9 +1,0 @@
-scene_synthesizer.assets.PlaneAsset
------------------------------------
-
-.. currentmodule:: scene_synthesizer.assets
-
-.. autoclass:: PlaneAsset
-    :members:
-    :undoc-members:
-    :inherited-members:

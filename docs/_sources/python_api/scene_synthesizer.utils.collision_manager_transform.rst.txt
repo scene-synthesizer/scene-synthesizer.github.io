@@ -1,6 +1,0 @@
-scene_synthesizer.utils.collision_manager_transform
----------------------------------------------------
-
-.. currentmodule:: scene_synthesizer.utils
-
-.. autofunction:: collision_manager_transform

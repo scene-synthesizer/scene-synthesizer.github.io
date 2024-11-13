@@ -1,6 +1,0 @@
-scene_synthesizer.exchange.export.export_stl
---------------------------------------------
-
-.. currentmodule:: scene_synthesizer.exchange.export
-
-.. autofunction:: export_stl

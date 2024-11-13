@@ -1,6 +1,0 @@
-scene_synthesizer.utils.forward_kinematics
-------------------------------------------
-
-.. currentmodule:: scene_synthesizer.utils
-
-.. autofunction:: forward_kinematics

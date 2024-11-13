@@ -1,9 +1,0 @@
-scene_synthesizer.utils.PositionIteratorUniform
------------------------------------------------
-
-.. currentmodule:: scene_synthesizer.utils
-
-.. autoclass:: PositionIteratorUniform
-    :members:
-    :undoc-members:
-    :inherited-members:

@@ -1,9 +1,0 @@
-scene_synthesizer.procedural_assets.RangeHoodAsset
---------------------------------------------------
-
-.. currentmodule:: scene_synthesizer.procedural_assets
-
-.. autoclass:: RangeHoodAsset
-    :members:
-    :undoc-members:
-    :inherited-members:

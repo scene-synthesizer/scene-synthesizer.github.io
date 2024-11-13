@@ -1,6 +1,0 @@
-scene_synthesizer.utils.cycle_list
-----------------------------------
-
-.. currentmodule:: scene_synthesizer.utils
-
-.. autofunction:: cycle_list

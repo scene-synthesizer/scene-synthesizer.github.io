@@ -1,9 +1,0 @@
-scene_synthesizer.procedural_assets.HandleAsset
------------------------------------------------
-
-.. currentmodule:: scene_synthesizer.procedural_assets
-
-.. autoclass:: HandleAsset
-    :members:
-    :undoc-members:
-    :inherited-members:

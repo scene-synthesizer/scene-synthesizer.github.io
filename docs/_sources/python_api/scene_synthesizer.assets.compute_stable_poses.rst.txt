@@ -1,6 +1,0 @@
-scene_synthesizer.assets.compute_stable_poses
----------------------------------------------
-
-.. currentmodule:: scene_synthesizer.assets
-
-.. autofunction:: compute_stable_poses

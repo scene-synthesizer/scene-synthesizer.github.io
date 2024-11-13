@@ -1,9 +1,0 @@
-scene_synthesizer.procedural_assets.ShelfAsset
-----------------------------------------------
-
-.. currentmodule:: scene_synthesizer.procedural_assets
-
-.. autoclass:: ShelfAsset
-    :members:
-    :undoc-members:
-    :inherited-members:

@@ -1,6 +1,0 @@
-scene_synthesizer.utils.hash_trimesh_geometry_metadata
-------------------------------------------------------
-
-.. currentmodule:: scene_synthesizer.utils
-
-.. autofunction:: hash_trimesh_geometry_metadata

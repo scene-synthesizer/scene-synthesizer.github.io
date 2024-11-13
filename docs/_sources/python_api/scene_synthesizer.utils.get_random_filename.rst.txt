@@ -1,6 +1,0 @@
-scene_synthesizer.utils.get_random_filename
--------------------------------------------
-
-.. currentmodule:: scene_synthesizer.utils
-
-.. autofunction:: get_random_filename
