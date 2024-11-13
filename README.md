@@ -1,6 +1,6 @@
 # scene_synthesizer Documentation
 
-[Website at https://scene-synthesizer.github.io](https://scene-synthesizer.github.io/).
+Website at [https://scene-synthesizer.github.io](https://scene-synthesizer.github.io/)
 
 ## Update Documentation
 
