@@ -1,0 +1,6 @@
+scene_synthesizer.exchange.export.export_usd
+--------------------------------------------
+
+.. currentmodule:: scene_synthesizer.exchange.export
+
+.. autofunction:: export_usd

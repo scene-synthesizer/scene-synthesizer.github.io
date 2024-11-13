@@ -1,0 +1,9 @@
+scene_synthesizer.assets.TrimeshAsset
+-------------------------------------
+
+.. currentmodule:: scene_synthesizer.assets
+
+.. autoclass:: TrimeshAsset
+    :members:
+    :undoc-members:
+    :inherited-members:

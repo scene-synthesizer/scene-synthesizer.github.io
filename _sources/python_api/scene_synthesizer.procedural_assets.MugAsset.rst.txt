@@ -1,0 +1,9 @@
+scene_synthesizer.procedural_assets.MugAsset
+--------------------------------------------
+
+.. currentmodule:: scene_synthesizer.procedural_assets
+
+.. autoclass:: MugAsset
+    :members:
+    :undoc-members:
+    :inherited-members:

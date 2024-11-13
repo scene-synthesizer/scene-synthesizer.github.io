@@ -1,0 +1,9 @@
+scene_synthesizer.procedural_assets.WallCabinetAsset
+----------------------------------------------------
+
+.. currentmodule:: scene_synthesizer.procedural_assets
+
+.. autoclass:: WallCabinetAsset
+    :members:
+    :undoc-members:
+    :inherited-members:

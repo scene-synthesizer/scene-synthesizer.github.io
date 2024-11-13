@@ -1,0 +1,6 @@
+scene_synthesizer.utils.construct_obj_collision_manager
+-------------------------------------------------------
+
+.. currentmodule:: scene_synthesizer.utils
+
+.. autofunction:: construct_obj_collision_manager

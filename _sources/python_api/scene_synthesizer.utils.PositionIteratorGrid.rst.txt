@@ -1,0 +1,9 @@
+scene_synthesizer.utils.PositionIteratorGrid
+--------------------------------------------
+
+.. currentmodule:: scene_synthesizer.utils
+
+.. autoclass:: PositionIteratorGrid
+    :members:
+    :undoc-members:
+    :inherited-members:

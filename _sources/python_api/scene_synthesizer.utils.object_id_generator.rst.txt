@@ -1,0 +1,6 @@
+scene_synthesizer.utils.object_id_generator
+-------------------------------------------
+
+.. currentmodule:: scene_synthesizer.utils
+
+.. autofunction:: object_id_generator

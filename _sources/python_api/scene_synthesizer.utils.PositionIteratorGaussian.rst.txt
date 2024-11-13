@@ -1,0 +1,9 @@
+scene_synthesizer.utils.PositionIteratorGaussian
+------------------------------------------------
+
+.. currentmodule:: scene_synthesizer.utils
+
+.. autoclass:: PositionIteratorGaussian
+    :members:
+    :undoc-members:
+    :inherited-members:

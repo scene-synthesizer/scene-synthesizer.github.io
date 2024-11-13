@@ -1,0 +1,9 @@
+scene_synthesizer.assets.CylinderAsset
+--------------------------------------
+
+.. currentmodule:: scene_synthesizer.assets
+
+.. autoclass:: CylinderAsset
+    :members:
+    :undoc-members:
+    :inherited-members:

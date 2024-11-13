@@ -1,0 +1,6 @@
+scene_synthesizer.utils.add_extents_to_trimesh_metadata
+-------------------------------------------------------
+
+.. currentmodule:: scene_synthesizer.utils
+
+.. autofunction:: add_extents_to_trimesh_metadata

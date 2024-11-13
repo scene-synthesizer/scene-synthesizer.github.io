@@ -1,0 +1,9 @@
+scene_synthesizer.utils.PositionIteratorList
+--------------------------------------------
+
+.. currentmodule:: scene_synthesizer.utils
+
+.. autoclass:: PositionIteratorList
+    :members:
+    :undoc-members:
+    :inherited-members:

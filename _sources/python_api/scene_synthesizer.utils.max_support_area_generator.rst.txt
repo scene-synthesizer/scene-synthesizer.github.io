@@ -1,0 +1,6 @@
+scene_synthesizer.utils.max_support_area_generator
+--------------------------------------------------
+
+.. currentmodule:: scene_synthesizer.utils
+
+.. autofunction:: max_support_area_generator

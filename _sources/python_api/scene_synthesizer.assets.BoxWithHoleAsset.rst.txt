@@ -1,0 +1,9 @@
+scene_synthesizer.assets.BoxWithHoleAsset
+-----------------------------------------
+
+.. currentmodule:: scene_synthesizer.assets
+
+.. autoclass:: BoxWithHoleAsset
+    :members:
+    :undoc-members:
+    :inherited-members:
