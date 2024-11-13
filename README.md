@@ -8,5 +8,5 @@
 cd scene_synthesizer/
 rm docs/_out -rf
 make docs
-cp -r docs/_out/html ../scene-synthesizer.github.io/
+cp -r docs/_out/html/* ../scene-synthesizer.github.io/
 ```
