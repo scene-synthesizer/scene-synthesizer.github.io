@@ -21,11 +21,8 @@ jobs:
       with:
         repository: NVlabs/scene_synthesizer
         token: ${{ secrets.MY_PAT }}
+        fetch-depth: 0    # Needed to fetch all tags for setuptools_scm
         path: other-repo             # Directory where the repo will be checked out
-        
-    - name: Fetch all history for all tags and branches
-      run: |
-        git fetch --prune --unshallow
 
     # Step 3: Set up Python
     - name: Set up Python
