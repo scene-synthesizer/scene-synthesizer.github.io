@@ -18,7 +18,7 @@ jobs:
     - name: Checkout another repository
       uses: actions/checkout@v4
       with:
-        repository: nvlabs/scene_synthesizer
+        repository: NVlabs/scene_synthesizer
         path: other-repo             # Directory where the repo will be checked out
 
     # Step 3: Set up Python
