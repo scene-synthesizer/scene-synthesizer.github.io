@@ -1,0 +1,49 @@
+name: Update Docs
+
+on:
+  workflow_dispatch: # Allow manual triggering of this workflow
+
+jobs:
+  update_docs:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout this repository
+      uses: actions/checkout@v4
+
+    - name: Checkout another repository
+      uses: actions/checkout@v4
+      with:
+        repository: NVlabs/scene_synthesizer
+        token: ${{ secrets.MY_PAT }}
+        fetch-depth: 0    # Needed to fetch all tags for setuptools_scm
+        path: other-repo             # Directory where the repo will be checked out
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.8'  # Specify Python version
+
+    - name: Install package
+      run: |
+        cd other-repo
+        python -m pip install --upgrade pip
+        python -m pip install -e .[ci,dev,all]
+
+    - name: Make docs
+      run: |
+        cd other-repo
+        make docs
+        cp -r docs/_out/html/* ../
+
+    - name: Delete other repo
+      run: |
+        rm -rf other-repo
+    
+    - name: Commit and push changes
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        git add -A .
+        git commit -m "Automated documentation update: $(date)"
+        git push origin main
