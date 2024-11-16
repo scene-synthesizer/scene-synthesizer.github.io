@@ -41,7 +41,7 @@ jobs:
 
     # Step 6: Upload to PyPI
     - name: Publish to PyPI
-      uses: pypa/gh-action-pypi-publish@v1
+      uses: pypa/gh-action-pypi-publish@release/v1
       with:
         password: ${{ secrets.PYPI_API_TOKEN }}
       env:
