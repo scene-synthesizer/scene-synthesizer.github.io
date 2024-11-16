@@ -19,6 +19,7 @@ jobs:
       uses: actions/checkout@v4
       with:
         repository: NVlabs/scene_synthesizer
+        token: ${{ secrets.MY_PAT }}
         path: other-repo             # Directory where the repo will be checked out
 
     # Step 3: Set up Python
