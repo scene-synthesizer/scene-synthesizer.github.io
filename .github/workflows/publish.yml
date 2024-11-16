@@ -1,0 +1,49 @@
+name: Publish to PyPI
+
+on:
+  push:
+    branches:
+      - main  # Run this workflow on pushes to the main branch
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Step 1: Checkout the primary repository
+    - name: Checkout this repository
+      uses: actions/checkout@v3
+
+    # Step 2: Checkout another repository
+    - name: Checkout another repository
+      uses: actions/checkout@v3
+      with:
+        repository: nvlabs/scene_synthesizer
+        path: other-repo             # Directory where the repo will be checked out
+
+    # Step 3: Set up Python
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'  # Specify Python version
+
+    # Step 4: Install build tools
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install build
+
+    # Step 5: Build the wheel
+    - name: Build wheel
+      run: |
+        cd other-repo  # Navigate to the checked-out repository
+        python -m build --wheel
+
+    # Step 6: Upload to PyPI
+    - name: Publish to PyPI
+      uses: pypa/gh-action-pypi-publish@v1
+      with:
+        password: ${{ secrets.PYPI_API_TOKEN }}
+      env:
+        TWINE_USERNAME: __token__
+        TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
