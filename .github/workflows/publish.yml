@@ -22,12 +22,16 @@ jobs:
         repository: NVlabs/scene_synthesizer
         token: ${{ secrets.MY_PAT }}
         path: other-repo             # Directory where the repo will be checked out
+        
+    - name: Fetch all history for all tags and branches
+      run: |
+        git fetch --prune --unshallow
 
     # Step 3: Set up Python
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
-        python-version: '3.9'  # Specify Python version
+        python-version: '3.8'  # Specify Python version
 
     # Step 4: Install build tools
     - name: Install dependencies
