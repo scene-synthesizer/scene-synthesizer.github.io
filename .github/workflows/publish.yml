@@ -26,7 +26,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
-        python-version: '3.9'  # Specify Python version
+        python-version: '3.8'  # Specify Python version
 
     # Step 4: Install build tools
     - name: Install dependencies
