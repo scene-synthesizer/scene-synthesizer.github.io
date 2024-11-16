@@ -12,18 +12,18 @@ jobs:
     steps:
     # Step 1: Checkout the primary repository
     - name: Checkout this repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     # Step 2: Checkout another repository
     - name: Checkout another repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         repository: nvlabs/scene_synthesizer
         path: other-repo             # Directory where the repo will be checked out
 
     # Step 3: Set up Python
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: '3.9'  # Specify Python version
 
