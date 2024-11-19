@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Installation &mdash; Scene Synthesizer 1.7.0.post1.dev1 documentation</title>
+  <title>Installation &mdash; Scene Synthesizer 1.8.0.post1.dev2 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=eafc0fe6" />
@@ -15,7 +15,7 @@
   
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=ca4e09dd"></script>
+      <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=e7093562"></script>
       <script src="../_static/doctools.js?v=888ff710"></script>
       <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../_static/js/theme.js"></script>
@@ -47,7 +47,10 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul class="current">
+<li class="toctree-l1"><a class="reference external" href="https://github.com/NVlabs/scene_synthesizer">GitHub Repository</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#via-pip">Via pip</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#via-git">Via git</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#soft-dependencies">Soft Dependencies</a></li>
 </ul>
 </li>
@@ -106,25 +109,38 @@
   <section id="installation">
 <h1>Installation<a class="headerlink" href="#installation" title="Permalink to this heading"></a></h1>
 <p>This project will download and install additional third-party open source software projects. Review the license terms of these open source projects before use.</p>
+<p>There are two ways to install <code class="docutils literal notranslate"><span class="pre">scene_synthesizer</span></code>: either directly installing from a PyPI server or by cloning the code repository.</p>
+<section id="via-pip">
+<h2>Via pip<a class="headerlink" href="#via-pip" title="Permalink to this heading"></a></h2>
 <p>The most basic installation of <code class="docutils literal notranslate"><span class="pre">scene_synthesizer</span></code> will install as few dependencies as possible:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># clone repository</span>
-<span class="nb">cd</span><span class="w"> </span>scene_synthesizer/
-pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>scene-synthesizer
 </pre></div>
 </div>
 <p>This allows you to load and export most common formats: STL, PLY, OBJ, GLB, GLTF, URDF.</p>
 <p>For importing and exporting USD files use the <code class="docutils literal notranslate"><span class="pre">recommend</span></code> pip extra:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># clone repository</span>
-<span class="nb">cd</span><span class="w"> </span>scene_synthesizer/
-pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.<span class="o">[</span>recommend<span class="o">]</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>scene-synthesizer<span class="o">[</span>recommend<span class="o">]</span>
 </pre></div>
 </div>
 <p>If you want the full experience, you can try the <code class="docutils literal notranslate"><span class="pre">all</span></code> extra which includes all the functionality:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># clone repository</span>
-<span class="nb">cd</span><span class="w"> </span>scene_synthesizer/
-pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.<span class="o">[</span>all<span class="o">]</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>scene-synthesizer<span class="o">[</span>all<span class="o">]</span>
 </pre></div>
 </div>
+</section>
+<section id="via-git">
+<h2>Via git<a class="headerlink" href="#via-git" title="Permalink to this heading"></a></h2>
+<p>Alternatively, if you want to make changes to <code class="docutils literal notranslate"><span class="pre">scene_synthesizer</span></code>, clone the repository:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># create and activate conda env or venv</span>
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/NVlabs/scene_synthesizer.git
+<span class="nb">cd</span><span class="w"> </span>scene_synthesizer/
+
+<span class="c1"># Again, there are the same three variations you can install:</span>
+<span class="c1"># .</span>
+<span class="c1"># .[recommend]</span>
+<span class="c1"># .[all]</span>
+pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.
+</pre></div>
+</div>
+</section>
 <section id="soft-dependencies">
 <h2>Soft Dependencies<a class="headerlink" href="#soft-dependencies" title="Permalink to this heading"></a></h2>
 <p>The function <code class="docutils literal notranslate"><span class="pre">show_graph</span></code> depends on <a class="reference external" href="http://pygraphviz.github.io/">pygraphviz</a>.
