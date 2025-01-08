@@ -6,8 +6,8 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Object Arrangement &mdash; Scene Synthesizer 1.11.12 documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+  <title>Object Arrangement &mdash; Scene Synthesizer 1.11.13 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=eafc0fe6" />
       <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=dce73442" />
@@ -15,7 +15,7 @@
   
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=36b57427"></script>
+      <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=92cdf03e"></script>
       <script src="../_static/doctools.js?v=888ff710"></script>
       <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../_static/js/theme.js"></script>
@@ -115,8 +115,8 @@
 <h2>Support Surfaces<a class="headerlink" href="#support-surfaces" title="Permalink to this heading"></a></h2>
 <p>Before placing objects in a scene, support surfaces need to be defined on the existing scene content with the <code class="docutils literal notranslate"><span class="pre">label_support</span></code> function.
 These support surfaces are 2D polygons where objects could be placed in and are indentified by their <code class="docutils literal notranslate"><span class="pre">label</span></code>.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scene_synthesizer</span> <span class="kn">import</span> <span class="n">procedural_scenes</span> <span class="k">as</span> <span class="n">ps</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">scene_synthesizer</span><span class="w"> </span><span class="kn">import</span> <span class="n">procedural_scenes</span> <span class="k">as</span> <span class="n">ps</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="n">kitchen</span> <span class="o">=</span> <span class="n">ps</span><span class="o">.</span><span class="n">kitchen_island</span><span class="p">()</span>
 <span class="n">kitchen</span><span class="o">.</span><span class="n">label_support</span><span class="p">(</span>
@@ -134,7 +134,7 @@ These support surfaces are 2D polygons where objects could be placed in and are 
 <p>In this example, surfaces were also found inside the hanging cabinets and refrigerator as shown in the wireframe view.
 The <code class="docutils literal notranslate"><span class="pre">label_support</span></code> has a number of arguments that allow the user to filter surfaces for properties such as area, position, orientation, etc.</p>
 <p>Let’s continue with a simpler example that only includes a single surface on a table:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scene_synthesizer</span> <span class="kn">import</span> <span class="n">procedural_assets</span> <span class="k">as</span> <span class="n">pa</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">scene_synthesizer</span><span class="w"> </span><span class="kn">import</span> <span class="n">procedural_assets</span> <span class="k">as</span> <span class="n">pa</span>
 
 <span class="n">table_scene</span> <span class="o">=</span> <span class="n">pa</span><span class="o">.</span><span class="n">TableAsset</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.4</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">)</span><span class="o">.</span><span class="n">scene</span><span class="p">(</span><span class="s1">&#39;table&#39;</span><span class="p">)</span>
 <span class="n">table_scene</span><span class="o">.</span><span class="n">label_support</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;support&quot;</span><span class="p">)</span>
@@ -187,7 +187,7 @@ This can be easily extended to multiple objects:</p>
 <p>Note, that the mugs in this example only vary in their rotation around the Z-axis.
 This is because the default parameter for <code class="docutils literal notranslate"><span class="pre">obj_orientation_iterator</span> <span class="pre">=</span> <span class="pre">utils.orientation_generator_uniform_around_z</span></code>.
 We can also use random stable orientations:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scene_synthesizer</span> <span class="kn">import</span> <span class="n">utils</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">scene_synthesizer</span><span class="w"> </span><span class="kn">import</span> <span class="n">utils</span>
 
 <span class="c1"># remove all mugs with a regular expression</span>
 <span class="c1"># that captures all object names</span>
@@ -214,11 +214,11 @@ We can also use random stable orientations:</p>
 <p>In the previous examples all placements were uniformly distributed on the support surfaces.
 There are more distributions available in the <code class="docutils literal notranslate"><span class="pre">utils</span></code> module.
 Here, we show them by repeatedly placing mugs on a table:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">scene_synthesizer</span> <span class="k">as</span> <span class="nn">synth</span>
-<span class="kn">from</span> <span class="nn">scene_synthesizer</span> <span class="kn">import</span> <span class="n">utils</span>
-<span class="kn">from</span> <span class="nn">scene_synthesizer</span> <span class="kn">import</span> <span class="n">procedural_assets</span> <span class="k">as</span> <span class="n">pa</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">scene_synthesizer</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">synth</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scene_synthesizer</span><span class="w"> </span><span class="kn">import</span> <span class="n">utils</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scene_synthesizer</span><span class="w"> </span><span class="kn">import</span> <span class="n">procedural_assets</span> <span class="k">as</span> <span class="n">pa</span>
 
-<span class="kn">import</span> <span class="nn">trimesh.transformations</span> <span class="k">as</span> <span class="nn">tra</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">trimesh.transformations</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">tra</span>
 
 <span class="n">obj_position_iterator</span> <span class="o">=</span> <span class="p">[</span>
     <span class="n">utils</span><span class="o">.</span><span class="n">PositionIteratorUniform</span><span class="p">(),</span>
@@ -263,7 +263,7 @@ Here, we show them by repeatedly placing mugs on a table:</p>
 <p>The 3D counterpart to support surfaces are containments.
 They can be used for sampling placements in 3D.
 Labelling them in a scene can be done via the <code class="docutils literal notranslate"><span class="pre">label_containment</span></code> method:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scene_synthesizer</span> <span class="kn">import</span> <span class="n">procedural_scenes</span> <span class="k">as</span> <span class="n">ps</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">scene_synthesizer</span><span class="w"> </span><span class="kn">import</span> <span class="n">procedural_scenes</span> <span class="k">as</span> <span class="n">ps</span>
 
 <span class="n">kitchen</span> <span class="o">=</span> <span class="n">ps</span><span class="o">.</span><span class="n">kitchen_island</span><span class="p">()</span>
 <span class="n">kitchen</span><span class="o">.</span><span class="n">label_containment</span><span class="p">(</span>
@@ -278,9 +278,9 @@ Labelling them in a scene can be done via the <code class="docutils literal notr
 </figure>
 <p>Internally, the method searches for support surfaces and extrudes them until a collision occurs.
 In the following example we label the interior volume of a container asset and use it to sample random placements for other assets:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">scene_synthesizer</span> <span class="k">as</span> <span class="nn">synth</span>
-<span class="kn">from</span> <span class="nn">scene_synthesizer</span> <span class="kn">import</span> <span class="n">utils</span>
-<span class="kn">from</span> <span class="nn">scene_synthesizer</span> <span class="kn">import</span> <span class="n">procedural_assets</span> <span class="k">as</span> <span class="n">pa</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">scene_synthesizer</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">synth</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scene_synthesizer</span><span class="w"> </span><span class="kn">import</span> <span class="n">utils</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scene_synthesizer</span><span class="w"> </span><span class="kn">import</span> <span class="n">procedural_assets</span> <span class="k">as</span> <span class="n">pa</span>
 
 <span class="n">aquarium</span> <span class="o">=</span> <span class="n">pa</span><span class="o">.</span><span class="n">OpenBoxAsset</span><span class="p">(</span><span class="mf">0.7</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="n">thickness</span><span class="o">=</span><span class="mf">0.005</span><span class="p">,</span> <span class="n">angle</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">front_scale</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 

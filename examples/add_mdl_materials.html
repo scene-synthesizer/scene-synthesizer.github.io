@@ -6,8 +6,8 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Adding MDL Materials &mdash; Scene Synthesizer 1.11.12 documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+  <title>Adding MDL Materials &mdash; Scene Synthesizer 1.11.13 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=eafc0fe6" />
       <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=dce73442" />
@@ -15,7 +15,7 @@
   
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=36b57427"></script>
+      <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=92cdf03e"></script>
       <script src="../_static/doctools.js?v=888ff710"></script>
       <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../_static/js/theme.js"></script>
@@ -108,11 +108,11 @@
 <p>The <a class="reference external" href="https://www.nvidia.com/en-us/design-visualization/technologies/material-definition-language/">Material Definition Language (MDL)</a> defines the behavior of light at a high level and enables sharing physcially based materials between applications.
 The <a class="reference external" href="https://developer.nvidia.com/vmaterials">vMaterials</a> collection is a curated library of thousands of MDLs that represent real-world materials.</p>
 <p>In the following we are showing how to attach MDLs from <code class="docutils literal notranslate"><span class="pre">vMaterials</span></code> in a random (but object-specific) manner to a USD kitchen scene generated with <code class="docutils literal notranslate"><span class="pre">scene_synthesizer</span></code>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
 
-<span class="kn">from</span> <span class="nn">scene_synthesizer</span> <span class="kn">import</span> <span class="n">procedural_scenes</span> <span class="k">as</span> <span class="n">ps</span>
-<span class="kn">from</span> <span class="nn">scene_synthesizer.usd_import</span> <span class="kn">import</span> <span class="n">get_scene_paths</span>
-<span class="kn">from</span> <span class="nn">scene_synthesizer.exchange.usd_export</span> <span class="kn">import</span> <span class="n">add_mdl_material</span><span class="p">,</span> <span class="n">bind_material_to_prims</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scene_synthesizer</span><span class="w"> </span><span class="kn">import</span> <span class="n">procedural_scenes</span> <span class="k">as</span> <span class="n">ps</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scene_synthesizer.usd_import</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_scene_paths</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scene_synthesizer.exchange.usd_export</span><span class="w"> </span><span class="kn">import</span> <span class="n">add_mdl_material</span><span class="p">,</span> <span class="n">bind_material_to_prims</span>
 
 <span class="c1"># The file name of the final result</span>
 <span class="n">usd_filename</span> <span class="o">=</span> <span class="s2">&quot;/tmp/kit.usd&quot;</span>

@@ -6,8 +6,8 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Scenes &mdash; Scene Synthesizer 1.11.12 documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+  <title>Scenes &mdash; Scene Synthesizer 1.11.13 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=eafc0fe6" />
       <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=dce73442" />
@@ -15,7 +15,7 @@
   
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=36b57427"></script>
+      <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=92cdf03e"></script>
       <script src="../_static/doctools.js?v=888ff710"></script>
       <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../_static/js/theme.js"></script>
@@ -109,15 +109,15 @@
   <section id="scenes">
 <h1>Scenes<a class="headerlink" href="#scenes" title="Permalink to this heading"></a></h1>
 <p>The <code class="docutils literal notranslate"><span class="pre">Scene</span></code> class contains most of <code class="docutils literal notranslate"><span class="pre">scene_synthesizer</span></code>’s functionality.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">scene_synthesizer</span> <span class="k">as</span> <span class="nn">synth</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">scene_synthesizer</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">synth</span>
 <span class="n">my_scene</span> <span class="o">=</span> <span class="n">synth</span><span class="o">.</span><span class="n">Scene</span><span class="p">()</span>
 </pre></div>
 </div>
 <section id="adding-assets-to-scenes">
 <h2>Adding Assets to Scenes<a class="headerlink" href="#adding-assets-to-scenes" title="Permalink to this heading"></a></h2>
 <p>Once assets are instantiated, they can be added to the <code class="docutils literal notranslate"><span class="pre">scene</span></code> object at the specified <code class="docutils literal notranslate"><span class="pre">transform</span></code> pose.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">scene_synthesizer</span> <span class="kn">import</span> <span class="n">procedural_assets</span> <span class="k">as</span> <span class="n">pa</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scene_synthesizer</span><span class="w"> </span><span class="kn">import</span> <span class="n">procedural_assets</span> <span class="k">as</span> <span class="n">pa</span>
 <span class="n">table</span> <span class="o">=</span> <span class="n">pa</span><span class="o">.</span><span class="n">TableAsset</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">)</span>
 
 <span class="n">my_scene</span><span class="o">.</span><span class="n">add_object</span><span class="p">(</span>
@@ -143,8 +143,8 @@ Anchors define reference points on assets or subscenes.
 They can be: <code class="docutils literal notranslate"><span class="pre">&quot;top&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;bottom&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;center&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;com&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;centroid&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;left&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;right&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;front&quot;</span></code> or <code class="docutils literal notranslate"><span class="pre">&quot;back&quot;</span></code>.
 Their meaning is the same as in the asset’s <code class="docutils literal notranslate"><span class="pre">origin</span></code> argument described <a class="reference internal" href="assets.html#origin-settings"><span class="std std-ref">here</span></a>.</p>
 <p>When using the arguments <code class="docutils literal notranslate"><span class="pre">connect_parent_anchor</span></code> and <code class="docutils literal notranslate"><span class="pre">connect_obj_anchor</span></code> the <code class="docutils literal notranslate"><span class="pre">add_object</span></code> method calculates the resulting transform automatically:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">scene_synthesizer</span> <span class="k">as</span> <span class="nn">synth</span>
-<span class="kn">from</span> <span class="nn">scene_synthesizer</span> <span class="kn">import</span> <span class="n">procedural_assets</span> <span class="k">as</span> <span class="n">pa</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">scene_synthesizer</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">synth</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scene_synthesizer</span><span class="w"> </span><span class="kn">import</span> <span class="n">procedural_assets</span> <span class="k">as</span> <span class="n">pa</span>
 
 <span class="n">table</span> <span class="o">=</span> <span class="n">pa</span><span class="o">.</span><span class="n">TableAsset</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">)</span>
 <span class="n">shelf</span> <span class="o">=</span> <span class="n">pa</span><span class="o">.</span><span class="n">ShelfAsset</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="n">num_boards</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
