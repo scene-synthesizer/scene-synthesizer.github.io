@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>scene_synthesizer.scene.Scene &mdash; Scene Synthesizer 1.12.1 documentation</title>
+  <title>scene_synthesizer.scene.Scene &mdash; Scene Synthesizer 1.12.2 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=eafc0fe6" />
@@ -15,7 +15,7 @@
   
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=22d31206"></script>
+      <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=152b986c"></script>
       <script src="../_static/doctools.js?v=888ff710"></script>
       <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../_static/js/theme.js"></script>
@@ -720,23 +720,26 @@ Leaf –&gt; …. –&gt; Root (scene.base_frame).</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="scene_synthesizer.scene.Scene.add_walls">
-<span class="sig-name descname"><span class="pre">add_walls</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dimensions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thickness</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.15</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overhang</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hole_extents</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hole_offset</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_primitives</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">object_ids</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scene_synthesizer.scene.Scene.add_walls" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">add_walls</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dimensions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thickness</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.15</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overhang</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offset</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hole_extents</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hole_offset</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_primitives</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">object_ids</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_collision_geometry</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">joint_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scene_synthesizer.scene.Scene.add_walls" title="Permalink to this definition"></a></dt>
 <dd><p>Add walls/box assets to any combination of the six faces of the scene volume.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>dimensions</strong> (<em>list</em><em>[</em><em>str</em><em>]</em>) – In which dimension to add a wall. Any subset of [‘x’, ‘-x’, ‘y’, ‘-y’, ‘z’, ‘-z’].</p></li>
 <li><p><strong>thickness</strong> (<em>float</em><em>, </em><em>optional</em>) – Thickness of the wall. Defaults to 0.15.</p></li>
-<li><p><strong>overhang</strong> (<em>float</em><em>, </em><em>optional</em>) – The amount of overhang of the wall. Can be a single scalar, a 3-dim list or a 6-dim list. Defaults to 0.0.</p></li>
+<li><p><strong>overhang</strong> (<em>float</em><em>, </em><em>optional</em>) – The amount of overhang of the wall. Can be a single scalar or a len(dimensions)-dim list. Defaults to 0.0.</p></li>
+<li><p><strong>offset</strong> (<em>float</em><em>, </em><em>optional</em>) – The distance between wall and closest scene geometry. Can be a single scalar or a len(dimensions)-dim list. Defaults to 0.0.</p></li>
 <li><p><strong>hole_extents</strong> (<em>list</em><em>[</em><em>float</em><em>]</em><em>, </em><em>optional</em>) – 2-dim extents of the hole in the wall. Defaults to (0, 0).</p></li>
 <li><p><strong>hole_offset</strong> (<em>tuple</em><em>[</em><em>float</em><em>]</em><em>, </em><em>optional</em>) – 2-dim position offset of the hole in the wall. Defaults to (0, 0).</p></li>
 <li><p><strong>use_primitives</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to create a mesh or use a primitive. Defaults to True.</p></li>
 <li><p><strong>object_ids</strong> (<em>list</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – A list of object names used for adding walls, needs to have same length as dimensions. If None, names will be “wall_{dim}”. Defaults to None</p></li>
+<li><p><strong>use_collision_geometry</strong> (<em>bool</em><em>, </em><em>optional</em>) – Defaults to True.</p></li>
+<li><p><strong>joint_type</strong> (<em>str</em><em>, </em><em>optional</em>) – Defaults to None.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Raises<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
-<li><p><strong>ValueError</strong> – If overhang is not a float, or a list of length 3 or 6.</p></li>
+<li><p><strong>ValueError</strong> – If overhang is not a float, or a list of length len(dimensions).</p></li>
 <li><p><strong>ValueError</strong> – If object_ids is not None and len(object_ids) != len(dimensions).</p></li>
 </ul>
 </dd>
