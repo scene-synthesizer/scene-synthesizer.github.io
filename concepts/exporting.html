@@ -1,23 +1,23 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Exporting &mdash; Scene Synthesizer 1.13.0 documentation</title>
+  <title>Exporting &mdash; Scene Synthesizer 1.13.2 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
-      <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=eafc0fe6" />
+      <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=fd3f3429" />
       <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=dce73442" />
 
   
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=f77edc46"></script>
-      <script src="../_static/doctools.js?v=888ff710"></script>
-      <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
+      <script src="../_static/documentation_options.js?v=1cdb6141"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -109,7 +109,7 @@
            <div itemprop="articleBody">
              
   <section id="exporting">
-<h1>Exporting<a class="headerlink" href="#exporting" title="Permalink to this heading"></a></h1>
+<h1>Exporting<a class="headerlink" href="#exporting" title="Link to this heading"></a></h1>
 <p>A <code class="docutils literal notranslate"><span class="pre">Scene</span></code> object can be exported to several file formats for use in rendereres, physics simulators etc.
 The <code class="docutils literal notranslate"><span class="pre">export(&lt;filename&gt;)</span></code> method will chose the appropriate exporter based on the filename extension:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">scene_synthesizer</span><span class="w"> </span><span class="kn">import</span> <span class="n">procedural_scenes</span> <span class="k">as</span> <span class="n">ps</span>
@@ -145,7 +145,7 @@ To do so, only pass <code class="docutils literal notranslate"><span class="pre"
 The easiest way to see them is to look up the docstring of the format-specific export function in the <code class="docutils literal notranslate"><span class="pre">export</span></code> module.
 In the following we show most of them.</p>
 <section id="polygon-mesh">
-<h2>Polygon Mesh<a class="headerlink" href="#polygon-mesh" title="Permalink to this heading"></a></h2>
+<h2>Polygon Mesh<a class="headerlink" href="#polygon-mesh" title="Link to this heading"></a></h2>
 <p>The scene object can be exported to the following common mesh representations: <code class="docutils literal notranslate"><span class="pre">GLTF</span></code>, <code class="docutils literal notranslate"><span class="pre">GLB</span></code>, <code class="docutils literal notranslate"><span class="pre">OBJ</span></code>, <code class="docutils literal notranslate"><span class="pre">STL</span></code>, <code class="docutils literal notranslate"><span class="pre">PLY</span></code>, etc.
 Note that this does not preserve articulations.</p>
 <dl class="py function">
@@ -276,14 +276,15 @@ as opposed to one larger file.</p>
 </dd></dl>
 
 <figure class="align-center" id="id2">
-<a class="reference internal image-reference" href="../_images/blender_kitchen.png"><img alt="../_images/blender_kitchen.png" src="../_images/blender_kitchen.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/blender_kitchen.png"><img alt="../_images/blender_kitchen.png" src="../_images/blender_kitchen.png" style="width: 100%;" />
+</a>
 <figcaption>
-<p><span class="caption-text">OBJ loaded in Blender.</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+<p><span class="caption-text">OBJ loaded in Blender.</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 </section>
 <section id="json">
-<h2>JSON<a class="headerlink" href="#json" title="Permalink to this heading"></a></h2>
+<h2>JSON<a class="headerlink" href="#json" title="Link to this heading"></a></h2>
 <p>Sometimes the scene data is required in a more parsable format.
 The JSON export serializes the scene into a dictionary containing the scene graph and geometry information.</p>
 <dl class="py function">
@@ -310,7 +311,7 @@ The JSON export serializes the scene into a dictionary containing the scene grap
 
 </section>
 <section id="urdf">
-<h2>URDF<a class="headerlink" href="#urdf" title="Permalink to this heading"></a></h2>
+<h2>URDF<a class="headerlink" href="#urdf" title="Link to this heading"></a></h2>
 <p>The <a class="reference external" href="https://wiki.ros.org/urdf/XML/model">URDF</a> format is a popular XML specification in robotics.</p>
 <dl class="py function">
 <dt class="sig sig-object py">
@@ -362,14 +363,15 @@ dict[str, str] (optional): If fname=None and separate_assets=True will return th
 </pre></div>
 </div>
 <figure class="align-center" id="id3">
-<a class="reference internal image-reference" href="../_images/ros_rviz_kitchen.png"><img alt="../_images/ros_rviz_kitchen.png" src="../_images/ros_rviz_kitchen.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/ros_rviz_kitchen.png"><img alt="../_images/ros_rviz_kitchen.png" src="../_images/ros_rviz_kitchen.png" style="width: 100%;" />
+</a>
 <figcaption>
-<p><span class="caption-text">URDF loaded in RViz.</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+<p><span class="caption-text">URDF loaded in RViz.</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 </section>
 <section id="usd">
-<h2>USD<a class="headerlink" href="#usd" title="Permalink to this heading"></a></h2>
+<h2>USD<a class="headerlink" href="#usd" title="Link to this heading"></a></h2>
 <p>The Universal Scene Description (<a class="reference external" href="https://openusd.org/release/index.html">USD</a>) is a versatile file format widely used in rendering and simulation applications.
 For example, a USD file can be utilized in platforms like <a class="reference external" href="https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/overview.html">Isaac Sim</a> or <a class="reference external" href="https://isaac-sim.github.io/IsaacLab/">Isaac Lab</a>.
 Additionally, the file can be inspected using the <a class="reference external" href="https://graphics.pixar.com/usd/release/toolset.html#usdview">usdview</a> tool.</p>
@@ -408,9 +410,10 @@ dict[str, Usd.Stage] (optional): If fname=None and separate_assets=True will ret
 </dd></dl>
 
 <figure class="align-center" id="id4">
-<a class="reference internal image-reference" href="../_images/isaac_sim_kitchen.png"><img alt="../_images/isaac_sim_kitchen.png" src="../_images/isaac_sim_kitchen.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/isaac_sim_kitchen.png"><img alt="../_images/isaac_sim_kitchen.png" src="../_images/isaac_sim_kitchen.png" style="width: 100%;" />
+</a>
 <figcaption>
-<p><span class="caption-text">USD loaded in Isaac Sim.</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+<p><span class="caption-text">USD loaded in Isaac Sim.</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 </section>

@@ -1,23 +1,23 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Object Arrangement &mdash; Scene Synthesizer 1.13.0 documentation</title>
+  <title>Object Arrangement &mdash; Scene Synthesizer 1.13.2 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
-      <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=eafc0fe6" />
+      <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=fd3f3429" />
       <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=dce73442" />
 
   
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=f77edc46"></script>
-      <script src="../_static/doctools.js?v=888ff710"></script>
-      <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
+      <script src="../_static/documentation_options.js?v=1cdb6141"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -109,10 +109,10 @@
            <div itemprop="articleBody">
              
   <section id="object-arrangement">
-<h1>Object Arrangement<a class="headerlink" href="#object-arrangement" title="Permalink to this heading"></a></h1>
+<h1>Object Arrangement<a class="headerlink" href="#object-arrangement" title="Link to this heading"></a></h1>
 <p>Besides adding objects with a specific transformation or using the <a class="reference internal" href="scenes.html#anchor-based"><span class="std std-ref">Anchor-based Compositioning</span></a> described previously, we can also randomly place objects on a surface or inside a volume as described next.</p>
 <section id="support-surfaces">
-<h2>Support Surfaces<a class="headerlink" href="#support-surfaces" title="Permalink to this heading"></a></h2>
+<h2>Support Surfaces<a class="headerlink" href="#support-surfaces" title="Link to this heading"></a></h2>
 <p>Before placing objects in a scene, support surfaces need to be defined on the existing scene content with the <code class="docutils literal notranslate"><span class="pre">label_support</span></code> function.
 These support surfaces are 2D polygons where objects could be placed in and are indentified by their <code class="docutils literal notranslate"><span class="pre">label</span></code>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">scene_synthesizer</span><span class="w"> </span><span class="kn">import</span> <span class="n">procedural_scenes</span> <span class="k">as</span> <span class="n">ps</span>
@@ -129,7 +129,8 @@ These support surfaces are 2D polygons where objects could be placed in and are 
 </pre></div>
 </div>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../_images/support_surfaces_kitchen.png"><img alt="../_images/support_surfaces_kitchen.png" src="../_images/support_surfaces_kitchen.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/support_surfaces_kitchen.png"><img alt="../_images/support_surfaces_kitchen.png" src="../_images/support_surfaces_kitchen.png" style="width: 100%;" />
+</a>
 </figure>
 <p>In this example, surfaces were also found inside the hanging cabinets and refrigerator as shown in the wireframe view.
 The <code class="docutils literal notranslate"><span class="pre">label_support</span></code> has a number of arguments that allow the user to filter surfaces for properties such as area, position, orientation, etc.</p>
@@ -143,11 +144,12 @@ The <code class="docutils literal notranslate"><span class="pre">label_support</
 </pre></div>
 </div>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../_images/empty_table_scene.png"><img alt="../_images/empty_table_scene.png" src="../_images/empty_table_scene.png" style="width: 50%;" /></a>
+<a class="reference internal image-reference" href="../_images/empty_table_scene.png"><img alt="../_images/empty_table_scene.png" src="../_images/empty_table_scene.png" style="width: 50%;" />
+</a>
 </figure>
 </section>
 <section id="object-placement">
-<h2>Object Placement<a class="headerlink" href="#object-placement" title="Permalink to this heading"></a></h2>
+<h2>Object Placement<a class="headerlink" href="#object-placement" title="Link to this heading"></a></h2>
 <p>Once the support surface has been defined, objects can be placed on them with the <code class="docutils literal notranslate"><span class="pre">place_object</span></code> method:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mug</span> <span class="o">=</span> <span class="n">pa</span><span class="o">.</span><span class="n">MugAsset</span><span class="p">(</span>
     <span class="c1"># this is needed since the place_object method</span>
@@ -166,7 +168,8 @@ The <code class="docutils literal notranslate"><span class="pre">label_support</
 </pre></div>
 </div>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../_images/table_with_mug.png"><img alt="../_images/table_with_mug.png" src="../_images/table_with_mug.png" style="width: 50%;" /></a>
+<a class="reference internal image-reference" href="../_images/table_with_mug.png"><img alt="../_images/table_with_mug.png" src="../_images/table_with_mug.png" style="width: 50%;" />
+</a>
 </figure>
 <p>The <code class="docutils literal notranslate"><span class="pre">place_object</span></code> method uses rejection sampling to find a collision-free pose.
 This can be easily extended to multiple objects:</p>
@@ -182,7 +185,8 @@ This can be easily extended to multiple objects:</p>
 </pre></div>
 </div>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../_images/table_with_mugs.png"><img alt="../_images/table_with_mugs.png" src="../_images/table_with_mugs.png" style="width: 50%;" /></a>
+<a class="reference internal image-reference" href="../_images/table_with_mugs.png"><img alt="../_images/table_with_mugs.png" src="../_images/table_with_mugs.png" style="width: 50%;" />
+</a>
 </figure>
 <p>Note, that the mugs in this example only vary in their rotation around the Z-axis.
 This is because the default parameter for <code class="docutils literal notranslate"><span class="pre">obj_orientation_iterator</span> <span class="pre">=</span> <span class="pre">utils.orientation_generator_uniform_around_z</span></code>.
@@ -206,11 +210,12 @@ We can also use random stable orientations:</p>
 </pre></div>
 </div>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../_images/table_with_stable_mugs.png"><img alt="../_images/table_with_stable_mugs.png" src="../_images/table_with_stable_mugs.png" style="width: 50%;" /></a>
+<a class="reference internal image-reference" href="../_images/table_with_stable_mugs.png"><img alt="../_images/table_with_stable_mugs.png" src="../_images/table_with_stable_mugs.png" style="width: 50%;" />
+</a>
 </figure>
 </section>
 <section id="placement-distributions">
-<h2>Placement Distributions<a class="headerlink" href="#placement-distributions" title="Permalink to this heading"></a></h2>
+<h2>Placement Distributions<a class="headerlink" href="#placement-distributions" title="Link to this heading"></a></h2>
 <p>In the previous examples all placements were uniformly distributed on the support surfaces.
 There are more distributions available in the <code class="docutils literal notranslate"><span class="pre">utils</span></code> module.
 Here, we show them by repeatedly placing mugs on a table:</p>
@@ -254,12 +259,13 @@ Here, we show them by repeatedly placing mugs on a table:</p>
 </pre></div>
 </div>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../_images/tables_with_mug_distributions.png"><img alt="../_images/tables_with_mug_distributions.png" src="../_images/tables_with_mug_distributions.png" style="width: 80%;" /></a>
+<a class="reference internal image-reference" href="../_images/tables_with_mug_distributions.png"><img alt="../_images/tables_with_mug_distributions.png" src="../_images/tables_with_mug_distributions.png" style="width: 80%;" />
+</a>
 </figure>
 <p>Note, that you can also provide your own custom distribution.</p>
 </section>
 <section id="containment-volumes">
-<h2>Containment Volumes<a class="headerlink" href="#containment-volumes" title="Permalink to this heading"></a></h2>
+<h2>Containment Volumes<a class="headerlink" href="#containment-volumes" title="Link to this heading"></a></h2>
 <p>The 3D counterpart to support surfaces are containments.
 They can be used for sampling placements in 3D.
 Labelling them in a scene can be done via the <code class="docutils literal notranslate"><span class="pre">label_containment</span></code> method:</p>
@@ -274,7 +280,8 @@ Labelling them in a scene can be done via the <code class="docutils literal notr
 </pre></div>
 </div>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../_images/containers_kitchen.png"><img alt="../_images/containers_kitchen.png" src="../_images/containers_kitchen.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/containers_kitchen.png"><img alt="../_images/containers_kitchen.png" src="../_images/containers_kitchen.png" style="width: 100%;" />
+</a>
 </figure>
 <p>Internally, the method searches for support surfaces and extrudes them until a collision occurs.
 In the following example we label the interior volume of a container asset and use it to sample random placements for other assets:</p>
@@ -302,7 +309,8 @@ In the following example we label the interior volume of a container asset and u
 </pre></div>
 </div>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../_images/aquarium_container.png"><img alt="../_images/aquarium_container.png" src="../_images/aquarium_container.png" style="width: 50%;" /></a>
+<a class="reference internal image-reference" href="../_images/aquarium_container.png"><img alt="../_images/aquarium_container.png" src="../_images/aquarium_container.png" style="width: 50%;" />
+</a>
 </figure>
 </section>
 </section>

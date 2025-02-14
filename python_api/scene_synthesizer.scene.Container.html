@@ -1,23 +1,23 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>scene_synthesizer.scene.Container &mdash; Scene Synthesizer 1.13.0 documentation</title>
+  <title>scene_synthesizer.scene.Container &mdash; Scene Synthesizer 1.13.2 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
-      <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=eafc0fe6" />
+      <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=fd3f3429" />
       <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=dce73442" />
 
   
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=f77edc46"></script>
-      <script src="../_static/doctools.js?v=888ff710"></script>
-      <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
+      <script src="../_static/documentation_options.js?v=1cdb6141"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -121,39 +121,39 @@
            <div itemprop="articleBody">
              
   <section id="scene-synthesizer-scene-container">
-<h1>scene_synthesizer.scene.Container<a class="headerlink" href="#scene-synthesizer-scene-container" title="Permalink to this heading"></a></h1>
+<h1>scene_synthesizer.scene.Container<a class="headerlink" href="#scene-synthesizer-scene-container" title="Link to this heading"></a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="scene_synthesizer.scene.Container">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">scene_synthesizer.scene.</span></span><span class="sig-name descname"><span class="pre">Container</span></span><a class="headerlink" href="#scene_synthesizer.scene.Container" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">scene_synthesizer.scene.</span></span><span class="sig-name descname"><span class="pre">Container</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">geometry</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">support_surface</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scene_synthesizer.scene.Container" title="Link to this definition"></a></dt>
 <dd><p>A class for holding information about a volume in the scene.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>geometry</strong> (<em>Trimesh</em>) – </p></li>
-<li><p><strong>node_name</strong> (<em>str</em>) – </p></li>
-<li><p><strong>transform</strong> (<em>ndarray</em>) – </p></li>
-<li><p><strong>support_surface</strong> (<a class="reference internal" href="scene_synthesizer.scene.SupportSurface.html#scene_synthesizer.scene.SupportSurface" title="scene_synthesizer.scene.SupportSurface"><em>SupportSurface</em></a><em> | </em><em>None</em>) – </p></li>
+<li><p><strong>geometry</strong> (<em>Trimesh</em>)</p></li>
+<li><p><strong>node_name</strong> (<em>str</em>)</p></li>
+<li><p><strong>transform</strong> (<em>ndarray</em>)</p></li>
+<li><p><strong>support_surface</strong> (<a class="reference internal" href="scene_synthesizer.scene.SupportSurface.html#scene_synthesizer.scene.SupportSurface" title="scene_synthesizer.scene.SupportSurface"><em>SupportSurface</em></a><em> | </em><em>None</em>)</p></li>
 </ul>
 </dd>
 </dl>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="scene_synthesizer.scene.Container.geometry">
-<span class="sig-name descname"><span class="pre">geometry</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Trimesh</span></em><a class="headerlink" href="#scene_synthesizer.scene.Container.geometry" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">geometry</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Trimesh</span></em><a class="headerlink" href="#scene_synthesizer.scene.Container.geometry" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="scene_synthesizer.scene.Container.node_name">
-<span class="sig-name descname"><span class="pre">node_name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#scene_synthesizer.scene.Container.node_name" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">node_name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#scene_synthesizer.scene.Container.node_name" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="scene_synthesizer.scene.Container.transform">
-<span class="sig-name descname"><span class="pre">transform</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ndarray</span></em><a class="headerlink" href="#scene_synthesizer.scene.Container.transform" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">transform</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ndarray</span></em><a class="headerlink" href="#scene_synthesizer.scene.Container.transform" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="scene_synthesizer.scene.Container.support_surface">
-<span class="sig-name descname"><span class="pre">support_surface</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="scene_synthesizer.scene.SupportSurface.html#scene_synthesizer.scene.SupportSurface" title="scene_synthesizer.scene.SupportSurface"><span class="pre">SupportSurface</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#scene_synthesizer.scene.Container.support_surface" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">support_surface</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="scene_synthesizer.scene.SupportSurface.html#scene_synthesizer.scene.SupportSurface" title="scene_synthesizer.scene.SupportSurface"><span class="pre">SupportSurface</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#scene_synthesizer.scene.Container.support_surface" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
