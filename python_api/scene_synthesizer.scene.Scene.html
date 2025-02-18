@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>scene_synthesizer.scene.Scene &mdash; Scene Synthesizer 1.13.2 documentation</title>
+  <title>scene_synthesizer.scene.Scene &mdash; Scene Synthesizer 1.14.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=fd3f3429" />
@@ -15,7 +15,7 @@
   
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=1cdb6141"></script>
+      <script src="../_static/documentation_options.js?v=01009efc"></script>
       <script src="../_static/doctools.js?v=9a2dae69"></script>
       <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
@@ -102,7 +102,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#scene_synthesizer.scene.Scene.connected_components_geometry"><code class="docutils literal notranslate"><span class="pre">Scene.connected_components_geometry()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#scene_synthesizer.scene.Scene.add_object"><code class="docutils literal notranslate"><span class="pre">Scene.add_object()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#scene_synthesizer.scene.Scene.add_object_without_collision"><code class="docutils literal notranslate"><span class="pre">Scene.add_object_without_collision()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#scene_synthesizer.scene.Scene.get_geometry"><code class="docutils literal notranslate"><span class="pre">Scene.get_geometry()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#scene_synthesizer.scene.Scene.get_geometries"><code class="docutils literal notranslate"><span class="pre">Scene.get_geometries()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#scene_synthesizer.scene.Scene.get_geometry_names"><code class="docutils literal notranslate"><span class="pre">Scene.get_geometry_names()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#scene_synthesizer.scene.Scene.get_object_name"><code class="docutils literal notranslate"><span class="pre">Scene.get_object_name()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#scene_synthesizer.scene.Scene.get_object_names"><code class="docutils literal notranslate"><span class="pre">Scene.get_object_names()</span></code></a></li>
@@ -868,33 +868,32 @@ Can be used to identify “islands” of geometry touching each other.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="scene_synthesizer.scene.Scene.get_geometry">
-<span class="sig-name descname"><span class="pre">get_geometry</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scene_synthesizer.scene.Scene.get_geometry" title="Link to this definition"></a></dt>
-<dd><p>Return trimesh geometry associated with node node_id.
-Returns None if no geometry is associated with the node.</p>
+<dt class="sig sig-object py" id="scene_synthesizer.scene.Scene.get_geometries">
+<span class="sig-name descname"><span class="pre">get_geometries</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scene_synthesizer.scene.Scene.get_geometries" title="Link to this definition"></a></dt>
+<dd><p>Returns a list of trimesh geometries associated with the query.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>node_id</strong> (<em>str</em>) – Identifier of the scene graph node.</p>
+<dd class="field-odd"><p><strong>query</strong> (<em>str</em>) – A regular expression that gets matched against geometry names. None will include all geometries. Defaults to None.</p>
 </dd>
-<dt class="field-even">Raises<span class="colon">:</span></dt>
-<dd class="field-even"><p><strong>ValueError</strong> – Raise exception if node with name node_id does not exist.</p>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Geometries matching the query.</p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p>Geometry associated with the node.</p>
-</dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p>trimesh.Trimesh</p>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[trimesh.Trimesh]</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="scene_synthesizer.scene.Scene.get_geometry_names">
-<span class="sig-name descname"><span class="pre">get_geometry_names</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scene_synthesizer.scene.Scene.get_geometry_names" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">get_geometry_names</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">obj_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scene_synthesizer.scene.Scene.get_geometry_names" title="Link to this definition"></a></dt>
 <dd><p>Return all geometry node names associated with that object or all geometry node names in the scene.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>obj_id</strong> (<em>str</em><em>, </em><em>optional</em>) – Object identifier. If None entire scene is considered. Defaults to None.</p>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>query</strong> (<em>str</em><em> or </em><em>list</em><em>[</em><em>str</em><em>]</em>) – A geometry name or list of names or regular expression. None will include all geometries if obj_id is also None. Defaults to None.</p></li>
+<li><p><strong>obj_id</strong> (<em>str</em><em>, </em><em>optional</em>) – Object identifier. If None, and query is None entire scene is considered. Defaults to None.</p></li>
+</ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>List of geometry names.</p>
