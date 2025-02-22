@@ -1,0 +1,6 @@
+scene_synthesizer.utils.normalize_and_bake_scale
+------------------------------------------------
+
+.. currentmodule:: scene_synthesizer.utils
+
+.. autofunction:: normalize_and_bake_scale

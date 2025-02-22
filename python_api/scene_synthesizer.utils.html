@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>scene_synthesizer.utils &mdash; Scene Synthesizer 1.14.0 documentation</title>
+  <title>scene_synthesizer.utils &mdash; Scene Synthesizer 1.14.1 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=fd3f3429" />
@@ -15,7 +15,7 @@
   
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=01009efc"></script>
+      <script src="../_static/documentation_options.js?v=a5781ae5"></script>
       <script src="../_static/doctools.js?v=9a2dae69"></script>
       <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
@@ -107,6 +107,7 @@
 <li class="toctree-l2"><a class="reference internal" href="scene_synthesizer.utils.late_bind_exception.html">late_bind_exception</a></li>
 <li class="toctree-l2"><a class="reference internal" href="scene_synthesizer.utils.left_and_aligned_back_bottom.html">left_and_aligned_back_bottom</a></li>
 <li class="toctree-l2"><a class="reference internal" href="scene_synthesizer.utils.max_support_area_generator.html">max_support_area_generator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scene_synthesizer.utils.normalize_and_bake_scale.html">normalize_and_bake_scale</a></li>
 <li class="toctree-l2"><a class="reference internal" href="scene_synthesizer.utils.object_id_generator.html">object_id_generator</a></li>
 <li class="toctree-l2"><a class="reference internal" href="scene_synthesizer.utils.orientation_generator_const.html">orientation_generator_const</a></li>
 <li class="toctree-l2"><a class="reference internal" href="scene_synthesizer.utils.orientation_generator_stable_poses.html">orientation_generator_stable_poses</a></li>
@@ -284,46 +285,49 @@
 <tr class="row-odd"><td><p><a class="reference internal" href="scene_synthesizer.utils.max_support_area_generator.html#scene_synthesizer.utils.max_support_area_generator" title="scene_synthesizer.utils.max_support_area_generator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">max_support_area_generator</span></code></a>(support_data)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="scene_synthesizer.utils.object_id_generator.html#scene_synthesizer.utils.object_id_generator" title="scene_synthesizer.utils.object_id_generator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object_id_generator</span></code></a>(base_name)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="scene_synthesizer.utils.normalize_and_bake_scale.html#scene_synthesizer.utils.normalize_and_bake_scale" title="scene_synthesizer.utils.normalize_and_bake_scale"><code class="xref py py-obj docutils literal notranslate"><span class="pre">normalize_and_bake_scale</span></code></a>(trimesh_scene)</p></td>
+<td><p>Takes a trimesh scene and bakes all scale information contained in the transform tree into the vertices of all meshes.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="scene_synthesizer.utils.object_id_generator.html#scene_synthesizer.utils.object_id_generator" title="scene_synthesizer.utils.object_id_generator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object_id_generator</span></code></a>(base_name)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="scene_synthesizer.utils.orientation_generator_const.html#scene_synthesizer.utils.orientation_generator_const" title="scene_synthesizer.utils.orientation_generator_const"><code class="xref py py-obj docutils literal notranslate"><span class="pre">orientation_generator_const</span></code></a>(orientation)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="scene_synthesizer.utils.orientation_generator_const.html#scene_synthesizer.utils.orientation_generator_const" title="scene_synthesizer.utils.orientation_generator_const"><code class="xref py py-obj docutils literal notranslate"><span class="pre">orientation_generator_const</span></code></a>(orientation)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="scene_synthesizer.utils.orientation_generator_stable_poses.html#scene_synthesizer.utils.orientation_generator_stable_poses" title="scene_synthesizer.utils.orientation_generator_stable_poses"><code class="xref py py-obj docutils literal notranslate"><span class="pre">orientation_generator_stable_poses</span></code></a>(asset[, seed])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="scene_synthesizer.utils.orientation_generator_stable_poses.html#scene_synthesizer.utils.orientation_generator_stable_poses" title="scene_synthesizer.utils.orientation_generator_stable_poses"><code class="xref py py-obj docutils literal notranslate"><span class="pre">orientation_generator_stable_poses</span></code></a>(asset[, seed])</p></td>
 <td><p>Generator that yields random homogeneous transformations that represent stable poses of an asset.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="scene_synthesizer.utils.orientation_generator_uniform_around_z.html#scene_synthesizer.utils.orientation_generator_uniform_around_z" title="scene_synthesizer.utils.orientation_generator_uniform_around_z"><code class="xref py py-obj docutils literal notranslate"><span class="pre">orientation_generator_uniform_around_z</span></code></a>([...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="scene_synthesizer.utils.orientation_generator_uniform_around_z.html#scene_synthesizer.utils.orientation_generator_uniform_around_z" title="scene_synthesizer.utils.orientation_generator_uniform_around_z"><code class="xref py py-obj docutils literal notranslate"><span class="pre">orientation_generator_uniform_around_z</span></code></a>([...])</p></td>
 <td><p>Generator that yields homogeneous transformations that are randomly rotated around the z axis.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="scene_synthesizer.utils.random_color.html#scene_synthesizer.utils.random_color" title="scene_synthesizer.utils.random_color"><code class="xref py py-obj docutils literal notranslate"><span class="pre">random_color</span></code></a>([dtype, seed])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="scene_synthesizer.utils.random_color.html#scene_synthesizer.utils.random_color" title="scene_synthesizer.utils.random_color"><code class="xref py py-obj docutils literal notranslate"><span class="pre">random_color</span></code></a>([dtype, seed])</p></td>
 <td><p>Return a random RGB color using datatype specified.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="scene_synthesizer.utils.random_id_generator.html#scene_synthesizer.utils.random_id_generator" title="scene_synthesizer.utils.random_id_generator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">random_id_generator</span></code></a>([base_name])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="scene_synthesizer.utils.random_id_generator.html#scene_synthesizer.utils.random_id_generator" title="scene_synthesizer.utils.random_id_generator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">random_id_generator</span></code></a>([base_name])</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="scene_synthesizer.utils.right_and_aligned_back_bottom.html#scene_synthesizer.utils.right_and_aligned_back_bottom" title="scene_synthesizer.utils.right_and_aligned_back_bottom"><code class="xref py py-obj docutils literal notranslate"><span class="pre">right_and_aligned_back_bottom</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="scene_synthesizer.utils.right_and_aligned_back_bottom.html#scene_synthesizer.utils.right_and_aligned_back_bottom" title="scene_synthesizer.utils.right_and_aligned_back_bottom"><code class="xref py py-obj docutils literal notranslate"><span class="pre">right_and_aligned_back_bottom</span></code></a>()</p></td>
 <td><p>Helper function that returns arguments for add_object(..).</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="scene_synthesizer.utils.sample_polygon.html#scene_synthesizer.utils.sample_polygon" title="scene_synthesizer.utils.sample_polygon"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sample_polygon</span></code></a>(polygon, count[, factor, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="scene_synthesizer.utils.sample_polygon.html#scene_synthesizer.utils.sample_polygon" title="scene_synthesizer.utils.sample_polygon"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sample_polygon</span></code></a>(polygon, count[, factor, ...])</p></td>
 <td><p>Use rejection sampling to generate random points inside a polygon.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="scene_synthesizer.utils.sample_random_direction_R3.html#scene_synthesizer.utils.sample_random_direction_R3" title="scene_synthesizer.utils.sample_random_direction_R3"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sample_random_direction_R3</span></code></a>(number_of_directions)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="scene_synthesizer.utils.sample_random_direction_R3.html#scene_synthesizer.utils.sample_random_direction_R3" title="scene_synthesizer.utils.sample_random_direction_R3"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sample_random_direction_R3</span></code></a>(number_of_directions)</p></td>
 <td><p>Uniformly distributed directions on S2.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="scene_synthesizer.utils.sample_volume_mesh.html#scene_synthesizer.utils.sample_volume_mesh" title="scene_synthesizer.utils.sample_volume_mesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sample_volume_mesh</span></code></a>(mesh, count[, seed])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="scene_synthesizer.utils.sample_volume_mesh.html#scene_synthesizer.utils.sample_volume_mesh" title="scene_synthesizer.utils.sample_volume_mesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sample_volume_mesh</span></code></a>(mesh, count[, seed])</p></td>
 <td><p>Use rejection sampling to produce points randomly distributed in the volume of a mesh.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="scene_synthesizer.utils.scaled_trimesh_scene.html#scene_synthesizer.utils.scaled_trimesh_scene" title="scene_synthesizer.utils.scaled_trimesh_scene"><code class="xref py py-obj docutils literal notranslate"><span class="pre">scaled_trimesh_scene</span></code></a>(scene, scale)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="scene_synthesizer.utils.scaled_trimesh_scene.html#scene_synthesizer.utils.scaled_trimesh_scene" title="scene_synthesizer.utils.scaled_trimesh_scene"><code class="xref py py-obj docutils literal notranslate"><span class="pre">scaled_trimesh_scene</span></code></a>(scene, scale)</p></td>
 <td><p>Return a copy of the trimesh scene, with meshes and scene transforms scaled to the requested factor.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="scene_synthesizer.utils.select_sublist.html#scene_synthesizer.utils.select_sublist" title="scene_synthesizer.utils.select_sublist"><code class="xref py py-obj docutils literal notranslate"><span class="pre">select_sublist</span></code></a>(query, all_items)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="scene_synthesizer.utils.select_sublist.html#scene_synthesizer.utils.select_sublist" title="scene_synthesizer.utils.select_sublist"><code class="xref py py-obj docutils literal notranslate"><span class="pre">select_sublist</span></code></a>(query, all_items)</p></td>
 <td><p>Select a sublist of a given list, using a query.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="scene_synthesizer.utils.snake_case.html#scene_synthesizer.utils.snake_case" title="scene_synthesizer.utils.snake_case"><code class="xref py py-obj docutils literal notranslate"><span class="pre">snake_case</span></code></a>(s)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="scene_synthesizer.utils.snake_case.html#scene_synthesizer.utils.snake_case" title="scene_synthesizer.utils.snake_case"><code class="xref py py-obj docutils literal notranslate"><span class="pre">snake_case</span></code></a>(s)</p></td>
 <td><p>Return string s in snake_case.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="scene_synthesizer.utils.support_area_generator.html#scene_synthesizer.utils.support_area_generator" title="scene_synthesizer.utils.support_area_generator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">support_area_generator</span></code></a>(support_data[, seed])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="scene_synthesizer.utils.support_area_generator.html#scene_synthesizer.utils.support_area_generator" title="scene_synthesizer.utils.support_area_generator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">support_area_generator</span></code></a>(support_data[, seed])</p></td>
 <td><p>A generator that randomly returns supports.</p></td>
 </tr>
 </tbody>

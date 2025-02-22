@@ -52,6 +52,7 @@ scene_synthesizer.utils
     late_bind_exception
     left_and_aligned_back_bottom
     max_support_area_generator
+    normalize_and_bake_scale
     object_id_generator
     orientation_generator_const
     orientation_generator_stable_poses
@@ -110,6 +111,7 @@ scene_synthesizer.utils
     late_bind_exception <scene_synthesizer.utils.late_bind_exception>
     left_and_aligned_back_bottom <scene_synthesizer.utils.left_and_aligned_back_bottom>
     max_support_area_generator <scene_synthesizer.utils.max_support_area_generator>
+    normalize_and_bake_scale <scene_synthesizer.utils.normalize_and_bake_scale>
     object_id_generator <scene_synthesizer.utils.object_id_generator>
     orientation_generator_const <scene_synthesizer.utils.orientation_generator_const>
     orientation_generator_stable_poses <scene_synthesizer.utils.orientation_generator_stable_poses>
