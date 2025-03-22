@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>scene_synthesizer.scene.Scene &mdash; Scene Synthesizer 1.14.2 documentation</title>
+  <title>scene_synthesizer.scene.Scene &mdash; Scene Synthesizer 1.14.3 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=fd3f3429" />
@@ -15,7 +15,7 @@
   
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=9280908f"></script>
+      <script src="../_static/documentation_options.js?v=36f81496"></script>
       <script src="../_static/doctools.js?v=9a2dae69"></script>
       <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
@@ -1364,15 +1364,15 @@ If a joint type is set to None this will internally call the remove_joint functi
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>parent_node</strong> (<em>str</em>) – Parent node in the scene graph.</p></li>
 <li><p><strong>child_node</strong> (<em>str</em>) – Child node in the scene graph.</p></li>
-<li><p><strong>name</strong> (<em>str</em>) – Identifier of the joint. Should be of the form &lt;obj_id&gt;/&lt;joint_id&gt;.</p></li>
+<li><p><strong>name</strong> (<em>str</em>) – Identifier of the joint. Needs to be of the form &lt;obj_id&gt;/&lt;joint_id&gt;.</p></li>
 <li><p><strong>type</strong> (<em>str</em>) – ‘revolute’, ‘prismatic’, ‘floating’, or ‘fixed’.</p></li>
 <li><p><strong>**q</strong> (<em>float</em><em>, </em><em>optional</em>) – Configuration of the joint. Defaults to 0.0.</p></li>
 <li><p><strong>**origin</strong> (<em>np.ndarray</em><em>, </em><em>optional</em>) – Homogenous matrix representing origin of joint. Defaults to self.get_transform(frame_to=child_node, frame_from=parent_node).</p></li>
 <li><p><strong>**axis</strong> (<em>list</em><em>[</em><em>float</em><em>]</em><em>, </em><em>optional</em>) – Axis of the joint. Defaults to [1, 0, 0].</p></li>
+<li><p><strong>**limit_lower</strong> (<em>float</em><em>, </em><em>optional</em>) – Lower joint limit. Defaults to constanst.DEFAULT_LIMIT_LOWER for revolute and prismatic joints.</p></li>
+<li><p><strong>**limit_upper</strong> (<em>float</em><em>, </em><em>optional</em>) – Upper joint limit. Defaults to constanst.DEFAULT_LIMIT_UPPER for revolute and prismatic joints.</p></li>
 <li><p><strong>**limit_velocity</strong> (<em>float</em><em>, </em><em>optional</em>) – Joint velocity limit. Defaults to None.</p></li>
 <li><p><strong>**limit_effort</strong> (<em>float</em><em>, </em><em>optional</em>) – Joint effort limit. Defaults to None.</p></li>
-<li><p><strong>**limit_lower</strong> (<em>float</em><em>, </em><em>optional</em>) – Lower joint limit. Defaults to None.</p></li>
-<li><p><strong>**limit_upper</strong> (<em>float</em><em>, </em><em>optional</em>) – Upper joint limit. Defaults to None.</p></li>
 <li><p><strong>**stiffness</strong> (<em>float</em><em>, </em><em>optional</em>) – Joint stiffness. Defaults to None.</p></li>
 <li><p><strong>**damping</strong> (<em>float</em><em>, </em><em>optional</em>) – Joint damping. Defaults to None.</p></li>
 </ul>
@@ -1380,6 +1380,7 @@ If a joint type is set to None this will internally call the remove_joint functi
 <dt class="field-even">Raises<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>ValueError</strong> – If name already exists.</p></li>
+<li><p><strong>ValueError</strong> – If name is not of the form &lt;obj_id&gt;/&lt;joint_id&gt;.</p></li>
 <li><p><strong>ValueError</strong> – If type is not one of the predefined ones.</p></li>
 <li><p><strong>ValueError</strong> – If there’s no edge in the scene graph between parent_node and child_node.</p></li>
 <li><p><strong>ValueError</strong> – If there’s already a joint in the scene graph between parent_node and child_node.</p></li>

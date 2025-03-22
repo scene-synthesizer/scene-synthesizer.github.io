@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>scene_synthesizer.assets &mdash; Scene Synthesizer 1.14.2 documentation</title>
+  <title>scene_synthesizer.assets &mdash; Scene Synthesizer 1.14.3 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=fd3f3429" />
@@ -15,7 +15,7 @@
   
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=9280908f"></script>
+      <script src="../_static/documentation_options.js?v=36f81496"></script>
       <script src="../_static/doctools.js?v=9a2dae69"></script>
       <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
@@ -72,6 +72,7 @@
 <li class="toctree-l2"><a class="reference internal" href="scene_synthesizer.assets.CQAsset.html">CQAsset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="scene_synthesizer.assets.CapsuleAsset.html">CapsuleAsset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="scene_synthesizer.assets.CylinderAsset.html">CylinderAsset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scene_synthesizer.assets.LPrismAsset.html">LPrismAsset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="scene_synthesizer.assets.MJCFAsset.html">MJCFAsset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="scene_synthesizer.assets.MeshAsset.html">MeshAsset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="scene_synthesizer.assets.OpenSCADAsset.html">OpenSCADAsset</a></li>
@@ -148,31 +149,34 @@
 <tr class="row-odd"><td><p><a class="reference internal" href="scene_synthesizer.assets.CylinderAsset.html#scene_synthesizer.assets.CylinderAsset" title="scene_synthesizer.assets.CylinderAsset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CylinderAsset</span></code></a>(*args, **kwargs)</p></td>
 <td><p>A cylinder primitive.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="scene_synthesizer.assets.MJCFAsset.html#scene_synthesizer.assets.MJCFAsset" title="scene_synthesizer.assets.MJCFAsset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MJCFAsset</span></code></a>(*args, **kwargs)</p></td>
-<td><p>A file-based asset, loaded from a MJCF file.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="scene_synthesizer.assets.MeshAsset.html#scene_synthesizer.assets.MeshAsset" title="scene_synthesizer.assets.MeshAsset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MeshAsset</span></code></a>(*args, **kwargs)</p></td>
-<td><p>A MeshAsset is a loadable file that describes geometry/ies and make up scenes.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="scene_synthesizer.assets.OpenSCADAsset.html#scene_synthesizer.assets.OpenSCADAsset" title="scene_synthesizer.assets.OpenSCADAsset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OpenSCADAsset</span></code></a>(*args, **kwargs)</p></td>
-<td><p>A file-based asset, loaded from a OpenSCAD file.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="scene_synthesizer.assets.PlaneAsset.html#scene_synthesizer.assets.PlaneAsset" title="scene_synthesizer.assets.PlaneAsset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PlaneAsset</span></code></a>(*args, **kwargs)</p></td>
-<td><p>An asset representing a plane.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="scene_synthesizer.assets.SphereAsset.html#scene_synthesizer.assets.SphereAsset" title="scene_synthesizer.assets.SphereAsset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SphereAsset</span></code></a>(*args, **kwargs)</p></td>
-<td><p>A sphere primitive.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="scene_synthesizer.assets.TrimeshAsset.html#scene_synthesizer.assets.TrimeshAsset" title="scene_synthesizer.assets.TrimeshAsset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TrimeshAsset</span></code></a>(*args, **kwargs)</p></td>
-<td><p>An asset based on a trimesh.Trimesh</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="scene_synthesizer.assets.TrimeshSceneAsset.html#scene_synthesizer.assets.TrimeshSceneAsset" title="scene_synthesizer.assets.TrimeshSceneAsset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TrimeshSceneAsset</span></code></a>(*args, **kwargs)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="scene_synthesizer.assets.LPrismAsset.html#scene_synthesizer.assets.LPrismAsset" title="scene_synthesizer.assets.LPrismAsset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LPrismAsset</span></code></a>(*args, **kwargs)</p></td>
 <td><p>An asset based on a trimesh.Scene</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="scene_synthesizer.assets.URDFAsset.html#scene_synthesizer.assets.URDFAsset" title="scene_synthesizer.assets.URDFAsset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">URDFAsset</span></code></a>(*args, **kwargs)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="scene_synthesizer.assets.MJCFAsset.html#scene_synthesizer.assets.MJCFAsset" title="scene_synthesizer.assets.MJCFAsset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MJCFAsset</span></code></a>(*args, **kwargs)</p></td>
+<td><p>A file-based asset, loaded from a MJCF file.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="scene_synthesizer.assets.MeshAsset.html#scene_synthesizer.assets.MeshAsset" title="scene_synthesizer.assets.MeshAsset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MeshAsset</span></code></a>(*args, **kwargs)</p></td>
+<td><p>A MeshAsset is a loadable file that describes geometry/ies and make up scenes.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="scene_synthesizer.assets.OpenSCADAsset.html#scene_synthesizer.assets.OpenSCADAsset" title="scene_synthesizer.assets.OpenSCADAsset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OpenSCADAsset</span></code></a>(*args, **kwargs)</p></td>
+<td><p>A file-based asset, loaded from a OpenSCAD file.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="scene_synthesizer.assets.PlaneAsset.html#scene_synthesizer.assets.PlaneAsset" title="scene_synthesizer.assets.PlaneAsset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PlaneAsset</span></code></a>(*args, **kwargs)</p></td>
+<td><p>An asset representing a plane.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="scene_synthesizer.assets.SphereAsset.html#scene_synthesizer.assets.SphereAsset" title="scene_synthesizer.assets.SphereAsset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SphereAsset</span></code></a>(*args, **kwargs)</p></td>
+<td><p>A sphere primitive.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="scene_synthesizer.assets.TrimeshAsset.html#scene_synthesizer.assets.TrimeshAsset" title="scene_synthesizer.assets.TrimeshAsset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TrimeshAsset</span></code></a>(*args, **kwargs)</p></td>
+<td><p>An asset based on a trimesh.Trimesh</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="scene_synthesizer.assets.TrimeshSceneAsset.html#scene_synthesizer.assets.TrimeshSceneAsset" title="scene_synthesizer.assets.TrimeshSceneAsset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TrimeshSceneAsset</span></code></a>(*args, **kwargs)</p></td>
+<td><p>An asset based on a trimesh.Scene</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="scene_synthesizer.assets.URDFAsset.html#scene_synthesizer.assets.URDFAsset" title="scene_synthesizer.assets.URDFAsset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">URDFAsset</span></code></a>(*args, **kwargs)</p></td>
 <td><p>A file-based asset, loaded from a URDF file.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="scene_synthesizer.assets.USDAsset.html#scene_synthesizer.assets.USDAsset" title="scene_synthesizer.assets.USDAsset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">USDAsset</span></code></a>(*args, **kwargs)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="scene_synthesizer.assets.USDAsset.html#scene_synthesizer.assets.USDAsset" title="scene_synthesizer.assets.USDAsset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">USDAsset</span></code></a>(*args, **kwargs)</p></td>
 <td><p>A file-based asset, loaded from a USD file.</p></td>
 </tr>
 </tbody>

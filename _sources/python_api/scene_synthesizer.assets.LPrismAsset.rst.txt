@@ -1,0 +1,9 @@
+scene_synthesizer.assets.LPrismAsset
+------------------------------------
+
+.. currentmodule:: scene_synthesizer.assets
+
+.. autoclass:: LPrismAsset
+    :members:
+    :undoc-members:
+    :inherited-members:

@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>scene_synthesizer.assets.CylinderAsset &mdash; Scene Synthesizer 1.14.3 documentation</title>
+  <title>scene_synthesizer.assets.LPrismAsset &mdash; Scene Synthesizer 1.14.3 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=fd3f3429" />
@@ -21,8 +21,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="scene_synthesizer.assets.LPrismAsset" href="scene_synthesizer.assets.LPrismAsset.html" />
-    <link rel="prev" title="scene_synthesizer.assets.CapsuleAsset" href="scene_synthesizer.assets.CapsuleAsset.html" /> 
+    <link rel="next" title="scene_synthesizer.assets.MJCFAsset" href="scene_synthesizer.assets.MJCFAsset.html" />
+    <link rel="prev" title="scene_synthesizer.assets.CylinderAsset" href="scene_synthesizer.assets.CylinderAsset.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -71,24 +71,24 @@
 <li class="toctree-l2"><a class="reference internal" href="scene_synthesizer.assets.BoxWithHoleAsset.html">BoxWithHoleAsset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="scene_synthesizer.assets.CQAsset.html">CQAsset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="scene_synthesizer.assets.CapsuleAsset.html">CapsuleAsset</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">CylinderAsset</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#scene_synthesizer.assets.CylinderAsset"><code class="docutils literal notranslate"><span class="pre">CylinderAsset</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#scene_synthesizer.assets.CylinderAsset.as_trimesh_scene"><code class="docutils literal notranslate"><span class="pre">CylinderAsset.as_trimesh_scene()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#scene_synthesizer.assets.CylinderAsset.compute_stable_poses"><code class="docutils literal notranslate"><span class="pre">CylinderAsset.compute_stable_poses()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#scene_synthesizer.assets.CylinderAsset.get_bounds"><code class="docutils literal notranslate"><span class="pre">CylinderAsset.get_bounds()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#scene_synthesizer.assets.CylinderAsset.get_center_mass"><code class="docutils literal notranslate"><span class="pre">CylinderAsset.get_center_mass()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#scene_synthesizer.assets.CylinderAsset.get_centroid"><code class="docutils literal notranslate"><span class="pre">CylinderAsset.get_centroid()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#scene_synthesizer.assets.CylinderAsset.get_extents"><code class="docutils literal notranslate"><span class="pre">CylinderAsset.get_extents()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#scene_synthesizer.assets.CylinderAsset.get_reference_frame"><code class="docutils literal notranslate"><span class="pre">CylinderAsset.get_reference_frame()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#scene_synthesizer.assets.CylinderAsset.mesh"><code class="docutils literal notranslate"><span class="pre">CylinderAsset.mesh()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#scene_synthesizer.assets.CylinderAsset.sample_stable_pose"><code class="docutils literal notranslate"><span class="pre">CylinderAsset.sample_stable_pose()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#scene_synthesizer.assets.CylinderAsset.scene"><code class="docutils literal notranslate"><span class="pre">CylinderAsset.scene()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#scene_synthesizer.assets.CylinderAsset.show"><code class="docutils literal notranslate"><span class="pre">CylinderAsset.show()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="scene_synthesizer.assets.CylinderAsset.html">CylinderAsset</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">LPrismAsset</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#scene_synthesizer.assets.LPrismAsset"><code class="docutils literal notranslate"><span class="pre">LPrismAsset</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#scene_synthesizer.assets.LPrismAsset.as_trimesh_scene"><code class="docutils literal notranslate"><span class="pre">LPrismAsset.as_trimesh_scene()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#scene_synthesizer.assets.LPrismAsset.compute_stable_poses"><code class="docutils literal notranslate"><span class="pre">LPrismAsset.compute_stable_poses()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#scene_synthesizer.assets.LPrismAsset.get_bounds"><code class="docutils literal notranslate"><span class="pre">LPrismAsset.get_bounds()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#scene_synthesizer.assets.LPrismAsset.get_center_mass"><code class="docutils literal notranslate"><span class="pre">LPrismAsset.get_center_mass()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#scene_synthesizer.assets.LPrismAsset.get_centroid"><code class="docutils literal notranslate"><span class="pre">LPrismAsset.get_centroid()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#scene_synthesizer.assets.LPrismAsset.get_extents"><code class="docutils literal notranslate"><span class="pre">LPrismAsset.get_extents()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#scene_synthesizer.assets.LPrismAsset.get_reference_frame"><code class="docutils literal notranslate"><span class="pre">LPrismAsset.get_reference_frame()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#scene_synthesizer.assets.LPrismAsset.mesh"><code class="docutils literal notranslate"><span class="pre">LPrismAsset.mesh()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#scene_synthesizer.assets.LPrismAsset.sample_stable_pose"><code class="docutils literal notranslate"><span class="pre">LPrismAsset.sample_stable_pose()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#scene_synthesizer.assets.LPrismAsset.scene"><code class="docutils literal notranslate"><span class="pre">LPrismAsset.scene()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#scene_synthesizer.assets.LPrismAsset.show"><code class="docutils literal notranslate"><span class="pre">LPrismAsset.show()</span></code></a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="scene_synthesizer.assets.LPrismAsset.html">LPrismAsset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="scene_synthesizer.assets.MJCFAsset.html">MJCFAsset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="scene_synthesizer.assets.MeshAsset.html">MeshAsset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="scene_synthesizer.assets.OpenSCADAsset.html">OpenSCADAsset</a></li>
@@ -130,9 +130,9 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="scene_synthesizer.assets.html">scene_synthesizer.assets</a></li>
-      <li class="breadcrumb-item active">scene_synthesizer.assets.CylinderAsset</li>
+      <li class="breadcrumb-item active">scene_synthesizer.assets.LPrismAsset</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/python_api/scene_synthesizer.assets.CylinderAsset.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/python_api/scene_synthesizer.assets.LPrismAsset.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -140,30 +140,28 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="scene-synthesizer-assets-cylinderasset">
-<h1>scene_synthesizer.assets.CylinderAsset<a class="headerlink" href="#scene-synthesizer-assets-cylinderasset" title="Link to this heading"></a></h1>
+  <section id="scene-synthesizer-assets-lprismasset">
+<h1>scene_synthesizer.assets.LPrismAsset<a class="headerlink" href="#scene-synthesizer-assets-lprismasset" title="Link to this heading"></a></h1>
 <dl class="py class">
-<dt class="sig sig-object py" id="scene_synthesizer.assets.CylinderAsset">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">scene_synthesizer.assets.</span></span><span class="sig-name descname"><span class="pre">CylinderAsset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scene_synthesizer.assets.CylinderAsset" title="Link to this definition"></a></dt>
-<dd><p>A cylinder primitive.</p>
+<dt class="sig sig-object py" id="scene_synthesizer.assets.LPrismAsset">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">scene_synthesizer.assets.</span></span><span class="sig-name descname"><span class="pre">LPrismAsset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scene_synthesizer.assets.LPrismAsset" title="Link to this definition"></a></dt>
+<dd><p>An asset based on a trimesh.Scene</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>radius</strong> (<em>float</em>) – Radius of cylinder.</p></li>
-<li><p><strong>height</strong> (<em>float</em>) – Height of cylinder.</p></li>
-<li><p><strong>transform</strong> (<em>np.ndarray</em><em>, </em><em>optional</em>) – 4x4 homogeneous transformation matrix for cylinder center. Defaults to None.</p></li>
-<li><p><strong>sections</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of facets in circle. Defaults to 32.</p></li>
+<li><p><strong>scene</strong> (<em>trimesh.Scene</em>) – The scene.</p></li>
+<li><p><strong>**kwargs</strong> – See Asset() constructor.</p></li>
 </ul>
 </dd>
 </dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="scene_synthesizer.assets.CylinderAsset.as_trimesh_scene">
-<span class="sig-name descname"><span class="pre">as_trimesh_scene</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">namespace</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'object'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_collision_geometry</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scene_synthesizer.assets.CylinderAsset.as_trimesh_scene" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="scene_synthesizer.assets.LPrismAsset.as_trimesh_scene">
+<span class="sig-name descname"><span class="pre">as_trimesh_scene</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">namespace</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'object'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_collision_geometry</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scene_synthesizer.assets.LPrismAsset.as_trimesh_scene" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="scene_synthesizer.assets.CylinderAsset.compute_stable_poses">
-<span class="sig-name descname"><span class="pre">compute_stable_poses</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">convexify</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">center_mass</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sigma</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_samples</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tolerance_zero_extent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1e-6</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_collision_geometry</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scene_synthesizer.assets.CylinderAsset.compute_stable_poses" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="scene_synthesizer.assets.LPrismAsset.compute_stable_poses">
+<span class="sig-name descname"><span class="pre">compute_stable_poses</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">convexify</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">center_mass</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sigma</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_samples</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tolerance_zero_extent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1e-6</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_collision_geometry</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scene_synthesizer.assets.LPrismAsset.compute_stable_poses" title="Link to this definition"></a></dt>
 <dd><p>Wrapper for trimesh.poses.compute_stable_poses function.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -188,8 +186,8 @@ probs ((n,) float): Probability in (0, 1) for each pose</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="scene_synthesizer.assets.CylinderAsset.get_bounds">
-<span class="sig-name descname"><span class="pre">get_bounds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_collision_geometry</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scene_synthesizer.assets.CylinderAsset.get_bounds" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="scene_synthesizer.assets.LPrismAsset.get_bounds">
+<span class="sig-name descname"><span class="pre">get_bounds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_collision_geometry</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scene_synthesizer.assets.LPrismAsset.get_bounds" title="Link to this definition"></a></dt>
 <dd><p>Return bounds of asset defined through nodes selected by query.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -209,8 +207,8 @@ probs ((n,) float): Probability in (0, 1) for each pose</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="scene_synthesizer.assets.CylinderAsset.get_center_mass">
-<span class="sig-name descname"><span class="pre">get_center_mass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_collision_geometry</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scene_synthesizer.assets.CylinderAsset.get_center_mass" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="scene_synthesizer.assets.LPrismAsset.get_center_mass">
+<span class="sig-name descname"><span class="pre">get_center_mass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_collision_geometry</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scene_synthesizer.assets.LPrismAsset.get_center_mass" title="Link to this definition"></a></dt>
 <dd><p>Return center of mass for subscene defined through nodes selected by query.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -230,8 +228,8 @@ probs ((n,) float): Probability in (0, 1) for each pose</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="scene_synthesizer.assets.CylinderAsset.get_centroid">
-<span class="sig-name descname"><span class="pre">get_centroid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_collision_geometry</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scene_synthesizer.assets.CylinderAsset.get_centroid" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="scene_synthesizer.assets.LPrismAsset.get_centroid">
+<span class="sig-name descname"><span class="pre">get_centroid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_collision_geometry</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scene_synthesizer.assets.LPrismAsset.get_centroid" title="Link to this definition"></a></dt>
 <dd><p>Return centroid for asset defined through nodes selected by query.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -251,8 +249,8 @@ probs ((n,) float): Probability in (0, 1) for each pose</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="scene_synthesizer.assets.CylinderAsset.get_extents">
-<span class="sig-name descname"><span class="pre">get_extents</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_collision_geometry</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scene_synthesizer.assets.CylinderAsset.get_extents" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="scene_synthesizer.assets.LPrismAsset.get_extents">
+<span class="sig-name descname"><span class="pre">get_extents</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_collision_geometry</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scene_synthesizer.assets.LPrismAsset.get_extents" title="Link to this definition"></a></dt>
 <dd><p>Return extents of asset defined through nodes selected by query.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -272,8 +270,8 @@ probs ((n,) float): Probability in (0, 1) for each pose</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="scene_synthesizer.assets.CylinderAsset.get_reference_frame">
-<span class="sig-name descname"><span class="pre">get_reference_frame</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xyz</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">query</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_collision_geometry</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scene_synthesizer.assets.CylinderAsset.get_reference_frame" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="scene_synthesizer.assets.LPrismAsset.get_reference_frame">
+<span class="sig-name descname"><span class="pre">get_reference_frame</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xyz</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">query</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_collision_geometry</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scene_synthesizer.assets.LPrismAsset.get_reference_frame" title="Link to this definition"></a></dt>
 <dd><p>Return reference frame for subscene defined through nodes selected by query.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -297,8 +295,8 @@ probs ((n,) float): Probability in (0, 1) for each pose</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="scene_synthesizer.assets.CylinderAsset.mesh">
-<span class="sig-name descname"><span class="pre">mesh</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">use_collision_geometry</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scene_synthesizer.assets.CylinderAsset.mesh" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="scene_synthesizer.assets.LPrismAsset.mesh">
+<span class="sig-name descname"><span class="pre">mesh</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">use_collision_geometry</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scene_synthesizer.assets.LPrismAsset.mesh" title="Link to this definition"></a></dt>
 <dd><p>Return a trimesh.Trimesh object of the asset.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -314,8 +312,8 @@ probs ((n,) float): Probability in (0, 1) for each pose</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="scene_synthesizer.assets.CylinderAsset.sample_stable_pose">
-<span class="sig-name descname"><span class="pre">sample_stable_pose</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scene_synthesizer.assets.CylinderAsset.sample_stable_pose" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="scene_synthesizer.assets.LPrismAsset.sample_stable_pose">
+<span class="sig-name descname"><span class="pre">sample_stable_pose</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scene_synthesizer.assets.LPrismAsset.sample_stable_pose" title="Link to this definition"></a></dt>
 <dd><p>Return a stable pose according to their likelihood.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -329,8 +327,8 @@ seed (int, numpy.random._generator.Generator, optional): A seed or random number
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="scene_synthesizer.assets.CylinderAsset.scene">
-<span class="sig-name descname"><span class="pre">scene</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'object'</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scene_synthesizer.assets.CylinderAsset.scene" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="scene_synthesizer.assets.LPrismAsset.scene">
+<span class="sig-name descname"><span class="pre">scene</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'object'</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scene_synthesizer.assets.LPrismAsset.scene" title="Link to this definition"></a></dt>
 <dd><p>Return a scene consisting of only this asset.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -349,8 +347,8 @@ seed (int, numpy.random._generator.Generator, optional): A seed or random number
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="scene_synthesizer.assets.CylinderAsset.show">
-<span class="sig-name descname"><span class="pre">show</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">use_collision_geometry</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">layers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scene_synthesizer.assets.CylinderAsset.show" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="scene_synthesizer.assets.LPrismAsset.show">
+<span class="sig-name descname"><span class="pre">show</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">use_collision_geometry</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">layers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scene_synthesizer.assets.LPrismAsset.show" title="Link to this definition"></a></dt>
 <dd><p>Display the asset via the trimesh scene viewer.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -370,8 +368,8 @@ seed (int, numpy.random._generator.Generator, optional): A seed or random number
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="scene_synthesizer.assets.CapsuleAsset.html" class="btn btn-neutral float-left" title="scene_synthesizer.assets.CapsuleAsset" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="scene_synthesizer.assets.LPrismAsset.html" class="btn btn-neutral float-right" title="scene_synthesizer.assets.LPrismAsset" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="scene_synthesizer.assets.CylinderAsset.html" class="btn btn-neutral float-left" title="scene_synthesizer.assets.CylinderAsset" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="scene_synthesizer.assets.MJCFAsset.html" class="btn btn-neutral float-right" title="scene_synthesizer.assets.MJCFAsset" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

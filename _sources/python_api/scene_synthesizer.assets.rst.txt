@@ -14,6 +14,7 @@ scene_synthesizer.assets
     CQAsset
     CapsuleAsset
     CylinderAsset
+    LPrismAsset
     MJCFAsset
     MeshAsset
     OpenSCADAsset
@@ -43,6 +44,7 @@ scene_synthesizer.assets
     CQAsset <scene_synthesizer.assets.CQAsset>
     CapsuleAsset <scene_synthesizer.assets.CapsuleAsset>
     CylinderAsset <scene_synthesizer.assets.CylinderAsset>
+    LPrismAsset <scene_synthesizer.assets.LPrismAsset>
     MJCFAsset <scene_synthesizer.assets.MJCFAsset>
     MeshAsset <scene_synthesizer.assets.MeshAsset>
     OpenSCADAsset <scene_synthesizer.assets.OpenSCADAsset>
