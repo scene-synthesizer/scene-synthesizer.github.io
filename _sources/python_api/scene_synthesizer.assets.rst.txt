@@ -30,8 +30,8 @@ scene_synthesizer.assets
 
 .. autosummary::
 
+    asset_generator
     compute_stable_poses
-    pyglet_app_run
 
 
 .. toctree::
@@ -54,5 +54,5 @@ scene_synthesizer.assets
     TrimeshSceneAsset <scene_synthesizer.assets.TrimeshSceneAsset>
     URDFAsset <scene_synthesizer.assets.URDFAsset>
     USDAsset <scene_synthesizer.assets.USDAsset>
+    asset_generator <scene_synthesizer.assets.asset_generator>
     compute_stable_poses <scene_synthesizer.assets.compute_stable_poses>
-    pyglet_app_run <scene_synthesizer.assets.pyglet_app_run>

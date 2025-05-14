@@ -12,21 +12,9 @@ scene_synthesizer.scene
     SupportSurface
 
 
-**Functions**
-
-.. autosummary::
-
-    asset_generator
-    dataclass
-    pyglet_app_run
-
-
 .. toctree::
     :hidden:
 
     Container <scene_synthesizer.scene.Container>
     Scene <scene_synthesizer.scene.Scene>
     SupportSurface <scene_synthesizer.scene.SupportSurface>
-    asset_generator <scene_synthesizer.scene.asset_generator>
-    dataclass <scene_synthesizer.scene.dataclass>
-    pyglet_app_run <scene_synthesizer.scene.pyglet_app_run>

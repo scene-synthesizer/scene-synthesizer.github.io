@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>scene_synthesizer.procedural_assets.BinAsset &mdash; Scene Synthesizer 1.14.11 documentation</title>
+  <title>scene_synthesizer.procedural_assets.BinAsset &mdash; Scene Synthesizer 1.14.12 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=fd3f3429" />
@@ -15,7 +15,7 @@
   
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=0f83a2a9"></script>
+      <script src="../_static/documentation_options.js?v=387b28c3"></script>
       <script src="../_static/doctools.js?v=9a2dae69"></script>
       <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
@@ -158,8 +158,10 @@
 <dt class="sig sig-object py" id="scene_synthesizer.procedural_assets.BinAsset">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">scene_synthesizer.procedural_assets.</span></span><span class="sig-name descname"><span class="pre">BinAsset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scene_synthesizer.procedural_assets.BinAsset" title="Link to this definition"></a></dt>
 <dd><p>A storage bin asset (rectangular bottom and four rectangular sides).
-Optionally, the sides can be angled.</p>
+Optionally, the sides can be angled and the surfaces can be wire meshes.</p>
 <a class="reference internal image-reference" href="../_images/bin_asset.png"><img alt="../_images/bin_asset.png" class="align-center" src="../_images/bin_asset.png" style="width: 250px;" />
+</a>
+<a class="reference internal image-reference" href="../_images/bin_asset_2.png"><img alt="../_images/bin_asset_2.png" class="align-center" src="../_images/bin_asset_2.png" style="width: 250px;" />
 </a>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -169,6 +171,7 @@ Optionally, the sides can be angled.</p>
 <li><p><strong>height</strong> (<em>float</em><em>, </em><em>optional</em>) – Height of storage bin. Defaults to 0.12.</p></li>
 <li><p><strong>thickness</strong> (<em>float</em><em>, </em><em>optional</em>) – Thickness of bottom and walls. Defaults to 0.005.</p></li>
 <li><p><strong>angle</strong> (<em>float</em><em>, </em><em>optional</em>) – Angle in radians to create slanted side walls. Needs to be in (-pi/2, +pi/2). Positive means outward slope. Defaults to 0.</p></li>
+<li><p><strong>wired</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to create a wire basket. Defaults to False.</p></li>
 <li><p><strong>use_primitives</strong> (<em>bool</em><em>, </em><em>optional</em>) – Will use five box primitives to construct bin. Note, that angle will be ignored. Defaults to False.</p></li>
 <li><p><strong>**kwargs</strong> – Arguments will be delegated to constructor of TrimeshAsset.</p></li>
 </ul>
@@ -176,7 +179,7 @@ Optionally, the sides can be angled.</p>
 </dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="scene_synthesizer.procedural_assets.BinAsset.create_primitives">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">create_primitives</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">width</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">depth</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thickness</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">angle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scene_synthesizer.procedural_assets.BinAsset.create_primitives" title="Link to this definition"></a></dt>
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">create_primitives</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">width</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">depth</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thickness</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">angle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wired</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wire_gap</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.05</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wire_thickness</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.005</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scene_synthesizer.procedural_assets.BinAsset.create_primitives" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">

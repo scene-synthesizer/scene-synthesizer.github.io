@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>scene_synthesizer.assets.compute_stable_poses &mdash; Scene Synthesizer 1.14.12 documentation</title>
+  <title>scene_synthesizer.assets.asset_generator &mdash; Scene Synthesizer 1.14.12 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=fd3f3429" />
@@ -21,8 +21,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="scene_synthesizer.procedural_assets" href="scene_synthesizer.procedural_assets.html" />
-    <link rel="prev" title="scene_synthesizer.assets.asset_generator" href="scene_synthesizer.assets.asset_generator.html" /> 
+    <link rel="next" title="scene_synthesizer.assets.compute_stable_poses" href="scene_synthesizer.assets.compute_stable_poses.html" />
+    <link rel="prev" title="scene_synthesizer.assets.USDAsset" href="scene_synthesizer.assets.USDAsset.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -82,11 +82,11 @@
 <li class="toctree-l2"><a class="reference internal" href="scene_synthesizer.assets.TrimeshSceneAsset.html">TrimeshSceneAsset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="scene_synthesizer.assets.URDFAsset.html">URDFAsset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="scene_synthesizer.assets.USDAsset.html">USDAsset</a></li>
-<li class="toctree-l2"><a class="reference internal" href="scene_synthesizer.assets.asset_generator.html">asset_generator</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">compute_stable_poses</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#scene_synthesizer.assets.compute_stable_poses"><code class="docutils literal notranslate"><span class="pre">compute_stable_poses()</span></code></a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">asset_generator</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#scene_synthesizer.assets.asset_generator"><code class="docutils literal notranslate"><span class="pre">asset_generator()</span></code></a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="scene_synthesizer.assets.compute_stable_poses.html">compute_stable_poses</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="scene_synthesizer.procedural_assets.html">scene_synthesizer.procedural_assets</a></li>
@@ -117,9 +117,9 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="scene_synthesizer.assets.html">scene_synthesizer.assets</a></li>
-      <li class="breadcrumb-item active">scene_synthesizer.assets.compute_stable_poses</li>
+      <li class="breadcrumb-item active">scene_synthesizer.assets.asset_generator</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/python_api/scene_synthesizer.assets.compute_stable_poses.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/python_api/scene_synthesizer.assets.asset_generator.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -127,46 +127,18 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="scene-synthesizer-assets-compute-stable-poses">
-<h1>scene_synthesizer.assets.compute_stable_poses<a class="headerlink" href="#scene-synthesizer-assets-compute-stable-poses" title="Link to this heading"></a></h1>
+  <section id="scene-synthesizer-assets-asset-generator">
+<h1>scene_synthesizer.assets.asset_generator<a class="headerlink" href="#scene-synthesizer-assets-asset-generator" title="Link to this heading"></a></h1>
 <dl class="py function">
-<dt class="sig sig-object py" id="scene_synthesizer.assets.compute_stable_poses">
-<span class="sig-prename descclassname"><span class="pre">scene_synthesizer.assets.</span></span><span class="sig-name descname"><span class="pre">compute_stable_poses</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mesh</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">center_mass</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sigma</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_samples</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scene_synthesizer.assets.compute_stable_poses" title="Link to this definition"></a></dt>
-<dd><p>Computes stable orientations of a mesh and their quasi-static probabilities.</p>
-<p>This method samples the location of the center of mass from a multivariate
-gaussian with the mean at the center of mass, and a covariance
-equal to and identity matrix times sigma, over n_samples.</p>
-<p>For each sample, it computes the stable resting poses of the mesh on a
-a planar workspace and evaluates the probabilities of landing in
-each pose if the object is dropped onto the table randomly.</p>
-<p>This method returns the 4x4 homogeneous transform matrices that place
-the shape against the planar surface with the z-axis pointing upwards
-and a list of the probabilities for each pose.</p>
-<p>The transforms and probabilties that are returned are sorted, with the
-most probable pose first.</p>
+<dt class="sig sig-object py" id="scene_synthesizer.assets.asset_generator">
+<span class="sig-prename descclassname"><span class="pre">scene_synthesizer.assets.</span></span><span class="sig-name descname"><span class="pre">asset_generator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fnames</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scene_synthesizer.assets.asset_generator" title="Link to this definition"></a></dt>
+<dd><p>A simple generator that runs through a list of filenames and returns an Asset for each one.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>mesh</strong> (<em>trimesh.Trimesh</em>) – The target mesh</p></li>
-<li><p><strong>com</strong> (<em>(</em><em>3</em><em>,</em><em>) </em><em>float</em>) – Rhe object center of mass. If None, this method
-assumes uniform density and watertightness and
-computes a center of mass explicitly</p></li>
-<li><p><strong>sigma</strong> (<em>float</em>) – Rhe covariance for the multivariate gaussian used
-to sample center of mass locations</p></li>
-<li><p><strong>n_samples</strong> (<em>int</em>) – The number of samples of the center of mass location</p></li>
-<li><p><strong>threshold</strong> (<em>float</em>) – The probability value at which to threshold
-returned stable poses</p></li>
-</ul>
+<dd class="field-odd"><p><strong>fnames</strong> (<em>list</em><em>[</em><em>str</em><em>]</em>) – A list of file names.</p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p><ul class="simple">
-<li><p><strong>transforms</strong> (<em>(n, 4, 4) float</em>) – The homogeneous matrices that transform the
-object to rest in a stable pose, with the
-new z-axis pointing upwards from the table
-and the object just touching the table.</p></li>
-<li><p><strong>probs</strong> (<em>(n,) float</em>) – Probability in (0, 1) for each pose</p></li>
-</ul>
-</p>
+<dt class="field-even">Yields<span class="colon">:</span></dt>
+<dd class="field-even"><p><em>assets.Asset</em> – An asset.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -177,8 +149,8 @@ and the object just touching the table.</p></li>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="scene_synthesizer.assets.asset_generator.html" class="btn btn-neutral float-left" title="scene_synthesizer.assets.asset_generator" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="scene_synthesizer.procedural_assets.html" class="btn btn-neutral float-right" title="scene_synthesizer.procedural_assets" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="scene_synthesizer.assets.USDAsset.html" class="btn btn-neutral float-left" title="scene_synthesizer.assets.USDAsset" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="scene_synthesizer.assets.compute_stable_poses.html" class="btn btn-neutral float-right" title="scene_synthesizer.assets.compute_stable_poses" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

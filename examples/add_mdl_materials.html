@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Adding MDL Materials &mdash; Scene Synthesizer 1.14.11 documentation</title>
+  <title>Adding MDL Materials &mdash; Scene Synthesizer 1.14.12 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=fd3f3429" />
@@ -15,7 +15,7 @@
   
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=0f83a2a9"></script>
+      <script src="../_static/documentation_options.js?v=387b28c3"></script>
       <script src="../_static/doctools.js?v=9a2dae69"></script>
       <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
@@ -242,6 +242,9 @@ The <a class="reference external" href="https://developer.nvidia.com/vmaterials"
         <span class="p">(</span><span class="s1">&#39;vMaterials_2/Ceramic/Ceramic_Tiles_Glazed_Paseo.mdl&#39;</span><span class="p">,</span> <span class="s1">&#39;Ceramic_Tiles_Paseo_White_Worn_Matte&#39;</span><span class="p">,</span> <span class="n">DEFAULT_TEXTURE_SCALE</span><span class="p">),</span>
         <span class="p">(</span><span class="s1">&#39;vMaterials_2/Ceramic/Ceramic_Tiles_Glazed_Diamond_Offset.mdl&#39;</span><span class="p">,</span> <span class="s1">&#39;Ceramic_Tiles_Offset_Diamond_Antique_White_Dirty&#39;</span><span class="p">,</span> <span class="n">DEFAULT_TEXTURE_SCALE</span><span class="p">),</span>
     <span class="p">],</span>
+    <span class="s1">&#39;white plastic&#39;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">(</span><span class="s1">&#39;vMaterials_2/Plastic/Plastic_Thick_Translucent.mdl&#39;</span><span class="p">,</span> <span class="s1">&#39;Plastic_Thick_Translucent&#39;</span><span class="p">,</span> <span class="n">DEFAULT_TEXTURE_SCALE</span><span class="p">),</span>
+    <span class="p">],</span>
 <span class="p">}</span>
 
 <span class="c1"># A dictionary mapping scene object/part names to types the general types of objects/parts defined above</span>
@@ -249,16 +252,17 @@ The <a class="reference external" href="https://developer.nvidia.com/vmaterials"
 <span class="n">geometry2material</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s2">&quot;(.*cabinet.*corpus.*|.*cabinet.*door|.*drawer.*board.*|.*cabinet.*closed.*|/world/kitchen_island/.*)|/world/corner_(1|2|3)&quot;</span><span class="p">:</span> <span class="s2">&quot;cabinet&quot;</span><span class="p">,</span>
     <span class="s2">&quot;(.*refrigerator.*|.*range_hood.*|.*range.*|.*dishwasher.*)&quot;</span><span class="p">:</span> <span class="s2">&quot;appliances&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;/world/oven/corpus/heater.*&quot;</span><span class="p">:</span> <span class="s1">&#39;rusted metal&#39;</span><span class="p">,</span>
-    <span class="s2">&quot;/world/oven/corpus/top&quot;</span><span class="p">:</span> <span class="s1">&#39;glossy black&#39;</span><span class="p">,</span>
+    <span class="s2">&quot;/world/range/corpus/heater.*&quot;</span><span class="p">:</span> <span class="s1">&#39;rusted metal&#39;</span><span class="p">,</span>
+    <span class="s2">&quot;/world/range/corpus/top&quot;</span><span class="p">:</span> <span class="s1">&#39;glossy black&#39;</span><span class="p">,</span>
     <span class="s2">&quot;.*/corpus/sink&quot;</span><span class="p">:</span> <span class="s1">&#39;sink&#39;</span><span class="p">,</span>
     <span class="s2">&quot;.*countertop.*&quot;</span><span class="p">:</span> <span class="s2">&quot;countertop&quot;</span><span class="p">,</span>
     <span class="s2">&quot;.*handle.*&quot;</span><span class="p">:</span> <span class="s2">&quot;handle&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;.*window&quot;</span><span class="p">:</span> <span class="s1">&#39;tinted glass&#39;</span><span class="p">,</span>
-    <span class="s2">&quot;.*glass&quot;</span><span class="p">:</span> <span class="s1">&#39;glass&#39;</span><span class="p">,</span>
+    <span class="s2">&quot;/world/range/.*window&quot;</span><span class="p">:</span> <span class="s1">&#39;tinted glass&#39;</span><span class="p">,</span>
+    <span class="s2">&quot;(.*glass|.*_window)&quot;</span><span class="p">:</span> <span class="s1">&#39;glass&#39;</span><span class="p">,</span>
     <span class="s2">&quot;/world/plate.*&quot;</span><span class="p">:</span> <span class="s1">&#39;sink&#39;</span><span class="p">,</span>
     <span class="s2">&quot;(/world/wall/geometry.*|/world/wall_(x|y|_y|_x)/geometry_0)&quot;</span><span class="p">:</span> <span class="s1">&#39;wall&#39;</span><span class="p">,</span>
     <span class="s2">&quot;/world/floor/geometry.*&quot;</span><span class="p">:</span> <span class="s1">&#39;floor&#39;</span><span class="p">,</span>
+    <span class="s2">&quot;.*dishwasher.*basket&quot;</span><span class="p">:</span> <span class="s1">&#39;white plastic&#39;</span><span class="p">,</span>
 <span class="p">}</span>
 
 <span class="c1"># Generate a random kitchen</span>
