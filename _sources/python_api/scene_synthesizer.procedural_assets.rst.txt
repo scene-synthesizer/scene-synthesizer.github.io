@@ -15,6 +15,7 @@ scene_synthesizer.procedural_assets
     CabinetDoorAsset
     CageAsset
     CubbyShelfAsset
+    DishRackAsset
     DishwasherAsset
     GlassAsset
     HandWheelAsset
@@ -49,6 +50,7 @@ scene_synthesizer.procedural_assets
     CabinetDoorAsset <scene_synthesizer.procedural_assets.CabinetDoorAsset>
     CageAsset <scene_synthesizer.procedural_assets.CageAsset>
     CubbyShelfAsset <scene_synthesizer.procedural_assets.CubbyShelfAsset>
+    DishRackAsset <scene_synthesizer.procedural_assets.DishRackAsset>
     DishwasherAsset <scene_synthesizer.procedural_assets.DishwasherAsset>
     GlassAsset <scene_synthesizer.procedural_assets.GlassAsset>
     HandWheelAsset <scene_synthesizer.procedural_assets.HandWheelAsset>
