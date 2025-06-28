@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>scene_synthesizer.procedural_scenes.kitchen &mdash; Scene Synthesizer 1.14.16 documentation</title>
+  <title>scene_synthesizer.procedural_scenes.kitchen &mdash; Scene Synthesizer 1.15.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=fd3f3429" />
@@ -15,7 +15,7 @@
   
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=c40a3264"></script>
+      <script src="../_static/documentation_options.js?v=70d5d4a5"></script>
       <script src="../_static/doctools.js?v=9a2dae69"></script>
       <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
@@ -85,6 +85,10 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Examples</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../examples/label_surfaces.html">Label Surfaces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/label_container.html">Label Containers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/stable_poses.html">Stable Poses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/use_dataset.html">Using Existing Datasets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples/add_mdl_materials.html">Adding MDL Materials</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples/isaacsim.html">Using Scenes in Isaac Sim</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples/isaaclab_rl.html">Using Scenes in Isaac Lab for RL</a></li>
@@ -121,7 +125,22 @@
 <dl class="py function">
 <dt class="sig sig-object py" id="scene_synthesizer.procedural_scenes.kitchen">
 <span class="sig-prename descclassname"><span class="pre">scene_synthesizer.procedural_scenes.</span></span><span class="sig-name descname"><span class="pre">kitchen</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scene_synthesizer.procedural_scenes.kitchen" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>Selects a random kitchen from the 6 layouts.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>seed</strong> (<em>int</em><em>, </em><em>numpy.random._generator.Generator</em><em>, </em><em>optional</em>) – A seed or random number generator. Defaults to None which creates a new default random number generator.</p></li>
+<li><p><strong>**kwargs</strong> – Keyword arguments get delegated to the specific kitchen scene.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The kitchen scene.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="scene_synthesizer.scene.Scene.html#scene_synthesizer.scene.Scene" title="scene_synthesizer.scene.Scene">scene.Scene</a></p>
+</dd>
+</dl>
+</dd></dl>
 
 </section>
 
